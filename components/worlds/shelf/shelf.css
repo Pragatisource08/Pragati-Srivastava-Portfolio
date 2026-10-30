@@ -1,0 +1,1064 @@
+/* Chaekgeori Shelf. Every selector is scoped under .shelf-root. */
+
+.shelf-root {
+  --ink: #2b2620;
+  --ink-soft: #4a4238;
+  --bone: #f5efe2;
+  --paper: #faf6ec;
+  --silk: #e8dfcc;
+  --mal: #5e8c78;
+  --mal-lt: #a7c4b4;
+  --mal-dk: #2f5546;
+  --cin: #b4482f;
+  --cin-lt: #e6ae98;
+  --cin-dk: #8e3221;
+  --och: #c9a465;
+  --och-lt: #e6d09e;
+  --az: #4f6c8c;
+  --az-lt: #afc0d3;
+  --face: #33493f;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: clip;
+  padding: clamp(10px, 2.2vw, 32px) clamp(12px, 2.6vw, 40px) 96px;
+  color: var(--ink);
+  font-family: var(--shelf-body), system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  caret-color: var(--cin);
+  background-color: var(--silk);
+  /* Silk ground: a fine, flat weave. */
+  background-image:
+    repeating-linear-gradient(0deg, rgb(43 38 32 / 0.035) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, rgb(43 38 32 / 0.03) 0 1px, transparent 1px 4px);
+}
+
+html:has(.shelf-root) {
+  scrollbar-color: var(--mal-dk, #2f5546) #e8dfcc;
+  background: #e8dfcc;
+}
+
+.shelf-root ::selection {
+  background: var(--mal-dk);
+  color: var(--bone);
+}
+
+.shelf-root :focus-visible {
+  outline: 2.5px solid var(--cin-dk);
+  outline-offset: 3px;
+}
+
+.shelf-root p {
+  text-wrap: pretty;
+}
+
+.shelf-root a {
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: 1px;
+}
+
+.shelf-root .shelf-num,
+.shelf-root .shelf-mono {
+  font-variant-numeric: tabular-nums;
+}
+
+.shelf-root .shelf-mono,
+.shelf-root kbd {
+  font-family: var(--shelf-mono), ui-monospace, monospace;
+  font-size: 0.92em;
+}
+
+.shelf-root kbd {
+  padding: 0 0.3em;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+}
+
+.shelf-root .shelf-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.shelf-root .shelf-skip {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 20;
+  padding: 8px 14px;
+  background: var(--ink);
+  color: var(--bone);
+}
+.shelf-root .shelf-skip:focus {
+  top: 12px;
+}
+
+.shelf-root .shelf-svg-display {
+  font-family: var(--shelf-display), serif;
+  font-weight: 600;
+}
+.shelf-root .shelf-svg-mono {
+  font-family: var(--shelf-mono), monospace;
+}
+
+/* ---------- Cabinet ---------- */
+
+.shelf-root .shelf-cabinet-wrap {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.shelf-root .shelf-cabinet {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-flow: row dense;
+  background: var(--face);
+  border-left: 2px solid var(--ink);
+  border-right: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+}
+
+@media (min-width: 600px) {
+  .shelf-root .shelf-cabinet {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1000px) {
+  .shelf-root .shelf-cabinet {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* ---------- Frame (reverse perspective boards) ---------- */
+
+.shelf-root .shelf-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 2;
+}
+.shelf-root .shelf-frame polygon,
+.shelf-root .shelf-frame path {
+  stroke: var(--ink);
+  stroke-width: 1.4;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+.shelf-root .shelf-board-top {
+  fill: var(--och);
+}
+.shelf-root .shelf-board-left {
+  fill: var(--mal);
+}
+.shelf-root .shelf-board-right {
+  fill: #6f9a86;
+}
+.shelf-root .shelf-board-crown {
+  fill: var(--cin);
+}
+.shelf-root .shelf-grain {
+  fill: none;
+  stroke-opacity: 0.32;
+  stroke-width: 1 !important;
+}
+.shelf-root .shelf-opening-edge {
+  fill: none;
+  stroke-width: 2 !important;
+}
+
+/* ---------- Crown (header band) ---------- */
+
+.shelf-root .shelf-crown {
+  position: relative;
+  border: 2px solid var(--ink);
+  background: var(--face);
+}
+
+.shelf-root .shelf-crown-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 18px 40px;
+  padding: clamp(16px, 2.4vw, 30px) clamp(14px, 2.6vw, 36px) clamp(18px, 2.4vw, 28px);
+  background: var(--bone);
+  border-bottom: 6px solid var(--cin);
+}
+.shelf-root .shelf-crown-inner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.5px;
+  background: var(--ink);
+}
+
+@media (min-width: 900px) {
+  .shelf-root .shelf-crown-inner {
+    grid-template-columns: minmax(0, 1.35fr) minmax(300px, 1fr);
+    align-items: end;
+  }
+}
+
+.shelf-root .shelf-name {
+  margin: 0;
+  font-family: var(--shelf-display), serif;
+  font-weight: 650;
+  font-size: clamp(2.1rem, 4.4vw, 4rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.shelf-root .shelf-role {
+  margin: 12px 0 0;
+  font-family: var(--shelf-display), serif;
+  font-weight: 500;
+  font-size: clamp(1.08rem, 1.6vw, 1.4rem);
+  line-height: 1.3;
+  color: var(--mal-dk);
+  text-wrap: balance;
+}
+
+.shelf-root .shelf-summary {
+  margin: 10px 0 0;
+  max-width: 62ch;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+
+@media (max-width: 599px) {
+  .shelf-root .shelf-summary {
+    display: none;
+  }
+}
+
+.shelf-root .shelf-crown-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 14px;
+}
+
+/* ---------- Actions ---------- */
+
+.shelf-root .shelf-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 16px 6px 6px;
+  background: var(--cin-dk);
+  color: var(--bone);
+  border: 1.5px solid var(--ink);
+  font-family: var(--shelf-display), serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 160ms var(--ease);
+}
+.shelf-root .shelf-email:hover {
+  background: var(--ink);
+}
+.shelf-root .shelf-email-lg {
+  font-size: 1.12rem;
+  padding: 7px 20px 7px 7px;
+}
+.shelf-root .shelf-email-seal {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  background: var(--bone);
+  color: var(--cin-dk);
+  border: 1.5px solid var(--ink);
+}
+.shelf-root .shelf-email-lg .shelf-email-seal {
+  width: 40px;
+  height: 40px;
+}
+
+.shelf-root .shelf-seals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.shelf-root .shelf-seal {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--ink);
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: rgb(43 38 32 / 0.35);
+}
+.shelf-root .shelf-seal:hover {
+  color: var(--cin-dk);
+  text-decoration-color: currentColor;
+}
+.shelf-root .shelf-seal-stamp {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  color: var(--cin-dk);
+  border: 1.5px solid var(--cin-dk);
+  background: var(--paper);
+}
+
+.shelf-root .shelf-copy-wrap {
+  display: inline-flex;
+}
+.shelf-root .shelf-copy,
+.shelf-root .shelf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 12px;
+  border: 1.5px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.92rem;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 150ms var(--ease);
+}
+.shelf-root .shelf-copy:hover,
+.shelf-root .shelf-btn:hover {
+  background: var(--och-lt);
+}
+.shelf-root .shelf-btn-primary {
+  background: var(--mal-dk);
+  color: var(--bone);
+}
+.shelf-root .shelf-btn-primary:hover {
+  background: var(--ink);
+}
+
+/* Depth control: Spines or Pages */
+.shelf-root .shelf-depth {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+  width: 100%;
+  padding-top: 12px;
+  border-top: 1px solid rgb(43 38 32 / 0.25);
+  font-size: 0.9rem;
+}
+.shelf-root .shelf-depth-label {
+  color: var(--ink-soft);
+}
+.shelf-root .shelf-depth-switch {
+  display: inline-flex;
+  border: 1.5px solid var(--ink);
+}
+.shelf-root .shelf-depth-switch button {
+  padding: 4px 14px;
+  border: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--shelf-display), serif;
+  font-weight: 600;
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+.shelf-root .shelf-depth-switch button + button {
+  border-left: 1.5px solid var(--ink);
+}
+.shelf-root .shelf-depth-switch button[aria-pressed="true"] {
+  background: var(--mal-dk);
+  color: var(--bone);
+}
+.shelf-root .shelf-depth-note {
+  color: var(--ink-soft);
+}
+
+/* ---------- Boxes ---------- */
+
+.shelf-root .shelf-box {
+  position: relative;
+  display: flex;
+  min-height: 200px;
+  z-index: 0;
+}
+.shelf-root .shelf-box.is-hover {
+  z-index: 3;
+}
+.shelf-root .shelf-box.is-open {
+  grid-column: span 2;
+  min-height: 360px;
+  z-index: 4;
+}
+.shelf-root .shelf-box.is-active {
+  z-index: 5;
+}
+@media (min-width: 600px) {
+  .shelf-root .shelf-box {
+    min-height: 224px;
+  }
+}
+@media (min-width: 1000px) {
+  .shelf-root .shelf-box {
+    min-height: 236px;
+  }
+}
+
+.shelf-root .shelf-opening {
+  --floor: 18px;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background:
+    linear-gradient(to top, var(--och-lt) 0 var(--floor), var(--ink) var(--floor) calc(var(--floor) + 1.5px), transparent calc(var(--floor) + 1.5px)),
+    repeating-linear-gradient(45deg, rgb(47 85 70 / 0.11) 0 1px, transparent 1px 15px),
+    repeating-linear-gradient(-45deg, rgb(47 85 70 / 0.11) 0 1px, transparent 1px 15px),
+    var(--bone);
+}
+.shelf-root .shelf-box.is-open .shelf-opening {
+  --floor: 0px;
+  background:
+    repeating-linear-gradient(45deg, rgb(47 85 70 / 0.07) 0 1px, transparent 1px 15px),
+    repeating-linear-gradient(-45deg, rgb(47 85 70 / 0.07) 0 1px, transparent 1px 15px),
+    var(--bone);
+}
+
+/* Empty compartment: the painted back of the cabinet, a plain lozenge medallion. */
+.shelf-root .shelf-empty-back {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  margin-bottom: calc(var(--floor) + 1px);
+  padding: 10px;
+}
+.shelf-root .shelf-empty-back rect,
+.shelf-root .shelf-empty-back path {
+  fill: none;
+  stroke: var(--mal);
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+}
+.shelf-root .shelf-empty-back rect:first-child {
+  fill: rgb(167 196 180 / 0.35);
+}
+.shelf-root .shelf-empty-back path:nth-of-type(2) {
+  fill: rgb(180 72 47 / 0.12);
+  stroke: var(--cin);
+}
+
+.shelf-root .shelf-box-btn {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+  min-height: 0;
+  padding: 10px 10px calc(var(--floor) - 6px);
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.shelf-root .shelf-box-btn:focus-visible {
+  outline-offset: -5px;
+}
+
+.shelf-root .shelf-slip {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-width: 100%;
+  padding: 6px 10px 7px;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+}
+.shelf-root .shelf-slip-title {
+  font-family: var(--shelf-display), serif;
+  font-weight: 650;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+.shelf-root .shelf-slip-sub {
+  font-size: 0.86rem;
+  line-height: 1.35;
+  color: var(--ink-soft);
+}
+.shelf-root .shelf-slip-more {
+  display: block;
+  margin-top: 4px;
+  color: var(--mal-dk);
+}
+
+.shelf-root .shelf-box-object {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 70px;
+  transition: transform 450ms var(--ease);
+  transform-origin: 50% 100%;
+}
+.shelf-root .shelf-box.is-hover:not(.is-open) .shelf-box-object {
+  transform: scale(1.06);
+}
+.shelf-root .shelf-obj {
+  display: block;
+  width: auto;
+  height: clamp(66px, 9vw, 118px);
+  max-width: 100%;
+  overflow: visible;
+}
+
+.shelf-root .shelf-box-hint {
+  position: absolute;
+  right: 8px;
+  bottom: 3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 7px;
+  font-size: 0.78rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  transition:
+    background-color 180ms var(--ease),
+    color 180ms var(--ease);
+}
+.shelf-root .shelf-box.is-hover .shelf-box-hint {
+  background: var(--ink);
+  color: var(--bone);
+}
+
+@media (max-width: 599px) {
+  .shelf-root .shelf-opening {
+    --floor: 14px;
+  }
+  .shelf-root .shelf-box-btn {
+    padding: 7px 6px calc(var(--floor) - 4px);
+  }
+  .shelf-root .shelf-slip {
+    padding: 5px 7px 6px;
+  }
+  .shelf-root .shelf-slip-title {
+    font-size: 0.95rem;
+  }
+  .shelf-root .shelf-slip-sub {
+    font-size: 0.8rem;
+  }
+  .shelf-root .shelf-box-hint span {
+    display: none;
+  }
+  .shelf-root .shelf-box-hint {
+    right: 4px;
+    padding: 2px 3px;
+  }
+}
+
+/* Opened: the head becomes a row, the panel reads below. */
+.shelf-root .shelf-box.is-open .shelf-box-btn {
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 16px;
+  padding: 14px 16px 12px;
+  border-bottom: 1.5px solid var(--ink);
+  background: linear-gradient(to top, var(--och-lt) 0 12px, transparent 12px);
+}
+.shelf-root .shelf-box.is-open .shelf-slip {
+  order: 2;
+  align-self: center;
+  flex: 1;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+.shelf-root .shelf-box.is-open .shelf-slip-title {
+  font-size: clamp(1.3rem, 2vw, 1.75rem);
+}
+.shelf-root .shelf-box.is-open .shelf-box-object {
+  order: 1;
+  flex: 0 0 auto;
+  min-height: 0;
+}
+.shelf-root .shelf-box.is-open .shelf-obj {
+  height: clamp(54px, 7vw, 84px);
+}
+.shelf-root .shelf-box[data-box="portrait"].is-open .shelf-box-object {
+  display: none;
+}
+.shelf-root .shelf-box.is-open .shelf-box-hint {
+  position: static;
+  order: 3;
+  align-self: flex-start;
+}
+@media (max-width: 599px) {
+  .shelf-root .shelf-box.is-open .shelf-box-btn {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .shelf-root .shelf-box.is-open .shelf-box-hint span {
+    display: inline;
+  }
+}
+
+.shelf-root .shelf-panel-wrap {
+  padding: 16px clamp(12px, 2vw, 22px) 22px;
+}
+.shelf-root .shelf-panel-wrap[hidden] {
+  display: none;
+}
+
+/* ---------- Panels ---------- */
+
+.shelf-root .shelf-panel {
+  max-width: 70ch;
+  font-size: 0.98rem;
+}
+.shelf-root .shelf-panel > * + * {
+  margin-top: 10px;
+}
+.shelf-root .shelf-panel p {
+  margin-bottom: 0;
+}
+.shelf-root .shelf-panel-lead {
+  font-family: var(--shelf-display), serif;
+  font-weight: 550;
+  font-size: 1.12rem;
+  line-height: 1.35;
+  color: var(--mal-dk);
+}
+.shelf-root .shelf-meta {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+.shelf-root .shelf-meta strong {
+  color: var(--ink);
+  font-family: var(--shelf-display), serif;
+  font-weight: 600;
+}
+.shelf-root .shelf-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--cin-dk);
+  text-decoration: underline;
+}
+.shelf-root .shelf-link:hover {
+  color: var(--mal-dk);
+}
+.shelf-root .shelf-points {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.shelf-root .shelf-points li {
+  position: relative;
+  padding-left: 20px;
+}
+.shelf-root .shelf-points li + li {
+  margin-top: 8px;
+}
+.shelf-root .shelf-points li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  background: var(--cin);
+  border: 1px solid var(--ink);
+}
+.shelf-root .shelf-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.shelf-root .shelf-tags li {
+  padding: 1px 8px;
+  border: 1px solid var(--mal-dk);
+  background: var(--paper);
+  color: var(--mal-dk);
+  font-size: 0.86rem;
+}
+.shelf-root .shelf-ledger {
+  margin: 0;
+}
+.shelf-root .shelf-ledger > div {
+  display: grid;
+  gap: 2px 18px;
+  padding: 9px 0;
+  border-top: 1px solid rgb(43 38 32 / 0.2);
+}
+.shelf-root .shelf-ledger > div:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+@media (min-width: 600px) {
+  .shelf-root .shelf-ledger > div {
+    grid-template-columns: 11rem 1fr;
+  }
+}
+.shelf-root .shelf-ledger dt {
+  font-family: var(--shelf-display), serif;
+  font-weight: 600;
+}
+.shelf-root .shelf-ledger dd {
+  margin: 0;
+}
+
+.shelf-root .shelf-panel-portrait {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 28px;
+  align-items: flex-start;
+  max-width: none;
+}
+.shelf-root .shelf-panel-portrait > * + * {
+  margin-top: 0;
+}
+.shelf-root .shelf-panel-text {
+  flex: 1 1 280px;
+  max-width: 62ch;
+}
+.shelf-root .shelf-panel-text > * + * {
+  margin-top: 10px;
+}
+.shelf-root .shelf-panel-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 16px;
+  padding-top: 4px;
+}
+
+/* Portrait as a hanging scroll */
+.shelf-root .shelf-hanging {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+}
+.shelf-root .shelf-hanging svg {
+  display: block;
+}
+.shelf-root .shelf-hanging-silk {
+  display: block;
+  margin: -1px 0;
+  padding: 10px 10px 16px;
+  background: var(--mal);
+  border: 1.4px solid var(--ink);
+}
+.shelf-root .shelf-hanging-photo {
+  display: block;
+  border: 1.4px solid var(--ink);
+  outline: 3px solid var(--bone);
+}
+
+/* ---------- Games ---------- */
+
+.shelf-root .shelf-game {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 72ch;
+}
+.shelf-root .shelf-game p {
+  margin: 0;
+}
+.shelf-root .shelf-game-rules {
+  font-size: 0.96rem;
+}
+.shelf-root .shelf-game-note {
+  font-size: 0.84rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.shelf-root .shelf-game-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+.shelf-root .shelf-game-status strong {
+  color: var(--ink);
+}
+
+.shelf-root .shelf-drawers {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 6px;
+  width: 100%;
+  padding: 8px;
+  background: var(--och);
+  border: 1.5px solid var(--ink);
+}
+@media (max-width: 459px) {
+  .shelf-root .shelf-drawers {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.shelf-root .shelf-drawer {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  min-width: 0;
+  padding: 6px 4px 5px;
+  border: 1.4px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+  transition:
+    background-color 160ms var(--ease),
+    transform 260ms var(--ease);
+}
+.shelf-root .shelf-drawer:not(:disabled):hover {
+  transform: translateY(2px);
+}
+.shelf-root .shelf-drawer.is-held {
+  background: var(--cin-lt);
+}
+.shelf-root .shelf-drawer:disabled {
+  cursor: default;
+  background: var(--och-lt);
+}
+.shelf-root .shelf-drawer-port {
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+.shelf-root .shelf-drawer-knob {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ink);
+}
+.shelf-root .shelf-drawer-tag {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.76rem;
+}
+.shelf-root .shelf-drawer.is-held .shelf-drawer-tag {
+  color: var(--cin-dk);
+  font-weight: 700;
+}
+.shelf-root .shelf-game-log {
+  min-height: 1.5em;
+  font-size: 0.86rem;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.shelf-root .shelf-game-end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 16px 16px;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+}
+.shelf-root .shelf-game-end-head {
+  font-family: var(--shelf-display), serif;
+  font-weight: 650;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: var(--cin-dk);
+}
+.shelf-root .shelf-game-end-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+}
+.shelf-root .shelf-game-end-ask {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.shelf-root .shelf-viva-q {
+  font-family: var(--shelf-display), serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+.shelf-root .shelf-viva-options {
+  display: grid;
+  gap: 6px;
+  width: 100%;
+}
+@media (min-width: 700px) {
+  .shelf-root .shelf-viva-options {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.shelf-root .shelf-viva-opt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1.4px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 150ms var(--ease);
+}
+.shelf-root .shelf-viva-opt:hover {
+  background: var(--och-lt);
+}
+.shelf-root .shelf-viva-opt[aria-disabled="true"] {
+  cursor: default;
+}
+.shelf-root .shelf-viva-opt.is-right {
+  background: var(--mal-lt);
+  border-color: var(--mal-dk);
+}
+.shelf-root .shelf-viva-opt.is-wrong {
+  background: var(--cin-lt);
+}
+.shelf-root .shelf-viva-opt.is-dim {
+  color: var(--ink-soft);
+}
+.shelf-root .shelf-viva-explain {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.shelf-root .shelf-cred-slip {
+  width: 100%;
+  padding: 12px 14px;
+  background: var(--paper);
+  border: 1.4px solid var(--ink);
+}
+.shelf-root .shelf-cred-event {
+  font-family: var(--shelf-display), serif;
+  font-weight: 600;
+  font-size: 1.08rem;
+}
+.shelf-root .shelf-cred-signals {
+  margin: 8px 0 0;
+}
+.shelf-root .shelf-cred-signals > div {
+  display: grid;
+  grid-template-columns: minmax(9rem, 1fr) 1.3fr;
+  gap: 10px;
+  align-items: center;
+  padding: 3px 0;
+}
+.shelf-root .shelf-cred-signals dt {
+  font-size: 0.9rem;
+}
+.shelf-root .shelf-cred-signals dd {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 0.9rem;
+}
+.shelf-root .shelf-cred-bar {
+  flex: 1;
+  height: 8px;
+  border: 1px solid var(--ink);
+  background: var(--bone);
+}
+.shelf-root .shelf-cred-bar span {
+  display: block;
+  height: 100%;
+  background: var(--mal);
+}
+.shelf-root .shelf-cred-seals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.shelf-root .shelf-cred-seal {
+  padding: 8px 14px;
+  border: 2px solid currentColor;
+  background: var(--paper);
+  font-family: var(--shelf-display), serif;
+  font-weight: 650;
+  font-size: 0.98rem;
+  cursor: pointer;
+  transition:
+    background-color 150ms var(--ease),
+    color 150ms var(--ease);
+}
+.shelf-root .shelf-cred-seal.is-verified {
+  color: var(--mal-dk);
+}
+.shelf-root .shelf-cred-seal.is-review {
+  color: #6b5320;
+}
+.shelf-root .shelf-cred-seal.is-flagged {
+  color: var(--cin-dk);
+}
+.shelf-root .shelf-cred-seal:hover {
+  color: var(--bone);
+  background: var(--ink);
+}
+.shelf-root .shelf-cred-last {
+  min-height: 1.4em;
+  font-size: 0.92rem;
+}
+
+/* ---------- Plinth ---------- */
+
+.shelf-root .shelf-plinth {
+  position: relative;
+}
+.shelf-root .shelf-plinth-board {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  padding: 14px clamp(14px, 2.6vw, 36px);
+  background: var(--och);
+  border: 2px solid var(--ink);
+  border-top: 0;
+}
+.shelf-root .shelf-plinth-board p {
+  margin: 0;
+}
+.shelf-root .shelf-feet {
+  display: block;
+  width: 100%;
+  height: 26px;
+}
+.shelf-root .shelf-foot {
+  fill: var(--och);
+  stroke: var(--ink);
+  stroke-width: 2;
+}
