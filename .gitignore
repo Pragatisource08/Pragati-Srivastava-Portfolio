@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Impeccable and Claude Code local output
+/.claude/settings.local.json
+/.claude/skills/impeccable/scripts/bin/
+/.impeccable/review/
+/.impeccable/questions/
+
+# Contains a phone number; keep out of the public repo until a redacted version exists
+/public/Pragati-Srivastava-Resume.pdf
