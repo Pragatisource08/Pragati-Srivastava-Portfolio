@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Practical File — first viewport sketch</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1440px; height: 900px; overflow: hidden; }
+  body { background: #B07A45; font-family: "Arial Narrow", Arial, sans-serif; color: #1D3D9A; position: relative; }
+  .kraft { position: absolute; inset: 0; background:
+    repeating-linear-gradient(97deg, rgba(0,0,0,.035) 0 2px, transparent 2px 7px),
+    repeating-linear-gradient(3deg, rgba(255,255,255,.04) 0 1px, transparent 1px 5px), #B07A45; }
+  .bar { position: absolute; left: 0; right: 0; top: 0; height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 56px; color: #F7F8F4; }
+  .bar b { font-size: 26px; letter-spacing: .02em; }
+  .bar span { font-size: 14px; }
+  .spread { position: absolute; left: 56px; right: 56px; top: 88px; bottom: 40px; display: grid; grid-template-columns: 1fr 1.25fr; gap: 0; }
+  .cover { background: #23408F; border: 2px solid #111; border-right: none; padding: 48px; position: relative; }
+  .label { background: #F7F8F4; border: 3px solid #111; padding: 28px 32px; width: 100%; }
+  .label h1 { font-size: 72px; line-height: .92; color: #111; text-transform: uppercase; letter-spacing: -.01em; }
+  .label .row { display: flex; gap: 12px; align-items: baseline; border-bottom: 2px solid #8DB7E0; padding: 10px 0; font-size: 26px; color: #1D3D9A; }
+  .label .row i { font-style: normal; color: #111; font-size: 15px; width: 120px; text-transform: uppercase; }
+  .photo { position: absolute; right: 64px; top: 64px; width: 150px; height: 180px; background: #c9b8a6; border: 3px solid #111; }
+  .cta { margin-top: 40px; display: flex; gap: 16px; }
+  .btn { background: #D7332A; color: #fff; font-size: 26px; padding: 18px 28px; border: 3px solid #111; }
+  .icon { width: 64px; height: 64px; border: 3px solid #111; background: #F7F8F4; }
+  .sheet { background: #F7F8F4; border: 2px solid #111; position: relative; padding: 48px 48px 48px 112px;
+    background-image: repeating-linear-gradient(#F7F8F4 0 47px, #8DB7E0 47px 49px); }
+  .sheet::before { content: ""; position: absolute; top: 0; bottom: 0; left: 88px; width: 3px; background: #D7332A; }
+  .sheet h2 { font-size: 64px; color: #111; text-transform: uppercase; line-height: 1; margin-bottom: 18px; }
+  table { width: 100%; border-collapse: collapse; font-size: 26px; }
+  th { text-align: left; font-size: 15px; color: #111; text-transform: uppercase; border-bottom: 3px solid #111; padding: 8px 0; }
+  td { height: 49px; color: #1D3D9A; }
+  td.sign { color: #D7332A; font-size: 34px; }
+  .stamp { position: absolute; right: 60px; bottom: 70px; border: 4px solid #5E3A9E; color: #5E3A9E; font-size: 34px; padding: 10px 18px; transform: rotate(-8deg); text-transform: uppercase; }
+  .toggle { position: absolute; right: 48px; top: 48px; display: flex; border: 3px solid #111; }
+  .toggle span { font-size: 24px; padding: 8px 14px; color: #111; }
+  .toggle span:first-child { background: #111; color: #F7F8F4; }
+</style>
+</head>
+<body>
+  <div class="kraft"></div>
+  <div class="bar"><b>PRAGATI.</b><span>Index · Experiments · Training · Viva</span></div>
+  <div class="spread">
+    <section class="cover">
+      <div class="label">
+        <h1>Practical<br>File</h1>
+        <div class="row"><i>Name</i>Pragati Srivastava</div>
+        <div class="row"><i>Branch</i>B.Tech CSE, 2024–28</div>
+        <div class="row"><i>Subject</i>Backend systems &amp; applied AI</div>
+        <div class="row"><i>Examiner</i>You</div>
+      </div>
+      <div class="photo"></div>
+      <div class="cta"><div class="btn">✉ Email Pragati</div><div class="icon"></div><div class="icon"></div><div class="icon"></div></div>
+    </section>
+    <section class="sheet">
+      <div class="toggle"><span>Fair copy</span><span>Rough work</span></div>
+      <h2>Index</h2>
+      <table>
+        <tr><th>No.</th><th>Experiment</th><th>Date</th><th>Sign</th></tr>
+        <tr><td>1</td><td>Gemini + Pinecone pipeline</td><td>Aug 2026</td><td class="sign">✓</td></tr>
+        <tr><td>2</td><td>BharatRitu credibility engine</td><td>2026</td><td class="sign"></td></tr>
+        <tr><td>3</td><td>Port fallback · PR #906</td><td>Apr 2026</td><td class="sign"></td></tr>
+        <tr><td>4</td><td>AirQuality globe</td><td>2025</td><td class="sign"></td></tr>
+        <tr><td>5</td><td>Track Your Finances</td><td>—</td><td class="sign"></td></tr>
+        <tr><td>6</td><td>Viva voce</td><td>today</td><td class="sign"></td></tr>
+      </table>
+      <div class="stamp">Merged</div>
+    </section>
+  </div>
+</body>
+</html>

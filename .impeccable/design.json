@@ -1,0 +1,681 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-30T18:13:44.714Z",
+  "title": "Design System: Pragati Srivastava — The Practical File",
+  "extensions": {
+    "colorMeta": {
+      "kraft": {
+        "role": "neutral",
+        "displayName": "Kraft Cover",
+        "purpose": "File cover and page ground, top bar, punch holes, browser canvas.",
+        "tonalRamp": [
+          "oklch(15% 0.045 65)",
+          "oklch(25% 0.063 65)",
+          "oklch(35% 0.081 65)",
+          "oklch(45% 0.090 65)",
+          "oklch(55% 0.090 65)",
+          "oklch(65% 0.081 65)",
+          "oklch(80% 0.054 65)",
+          "oklch(95% 0.022 65)"
+        ]
+      },
+      "kraft-deep": {
+        "role": "neutral",
+        "displayName": "Kraft Deep",
+        "purpose": "Scrollbar thumb on the kraft track.",
+        "tonalRamp": [
+          "oklch(15% 0.040 62)",
+          "oklch(25% 0.056 62)",
+          "oklch(35% 0.072 62)",
+          "oklch(45% 0.080 62)",
+          "oklch(55% 0.080 62)",
+          "oklch(65% 0.072 62)",
+          "oklch(80% 0.048 62)",
+          "oklch(95% 0.020 62)"
+        ]
+      },
+      "kraft-ink": {
+        "role": "neutral",
+        "displayName": "Kraft Ink",
+        "purpose": "Text printed directly on kraft.",
+        "tonalRamp": [
+          "oklch(15% 0.010 60)",
+          "oklch(25% 0.014 60)",
+          "oklch(35% 0.018 60)",
+          "oklch(45% 0.020 60)",
+          "oklch(55% 0.020 60)",
+          "oklch(65% 0.018 60)",
+          "oklch(80% 0.012 60)",
+          "oklch(95% 0.005 60)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Sheet White",
+        "purpose": "Every sheet, chip, paper button and icon link.",
+        "tonalRamp": [
+          "oklch(15% 0.003 110)",
+          "oklch(25% 0.004 110)",
+          "oklch(35% 0.005 110)",
+          "oklch(45% 0.006 110)",
+          "oklch(55% 0.006 110)",
+          "oklch(65% 0.005 110)",
+          "oklch(80% 0.004 110)",
+          "oklch(95% 0.002 110)"
+        ]
+      },
+      "rule-blue": {
+        "role": "neutral",
+        "displayName": "Rule Blue",
+        "purpose": "Ruled lines and dividers.",
+        "tonalRamp": [
+          "oklch(15% 0.030 245)",
+          "oklch(25% 0.042 245)",
+          "oklch(35% 0.054 245)",
+          "oklch(45% 0.060 245)",
+          "oklch(55% 0.060 245)",
+          "oklch(65% 0.054 245)",
+          "oklch(80% 0.036 245)",
+          "oklch(95% 0.015 245)"
+        ]
+      },
+      "margin-red": {
+        "role": "primary",
+        "displayName": "Margin Red",
+        "purpose": "Printed margin line and the examiner's pen strokes.",
+        "tonalRamp": [
+          "oklch(15% 0.095 28)",
+          "oklch(25% 0.133 28)",
+          "oklch(35% 0.171 28)",
+          "oklch(45% 0.190 28)",
+          "oklch(55% 0.190 28)",
+          "oklch(65% 0.171 28)",
+          "oklch(80% 0.114 28)",
+          "oklch(95% 0.048 28)"
+        ]
+      },
+      "examiner-red": {
+        "role": "primary",
+        "displayName": "Examiner Red",
+        "purpose": "Red stamp button, mail button, wordmark period, crash lines, focus ring.",
+        "tonalRamp": [
+          "oklch(15% 0.090 28)",
+          "oklch(25% 0.126 28)",
+          "oklch(35% 0.162 28)",
+          "oklch(45% 0.180 28)",
+          "oklch(55% 0.180 28)",
+          "oklch(65% 0.162 28)",
+          "oklch(80% 0.108 28)",
+          "oklch(95% 0.045 28)"
+        ]
+      },
+      "examiner-red-press": {
+        "role": "primary",
+        "displayName": "Examiner Red Press",
+        "purpose": "Hover state of red controls.",
+        "tonalRamp": [
+          "oklch(15% 0.085 28)",
+          "oklch(25% 0.119 28)",
+          "oklch(35% 0.153 28)",
+          "oklch(45% 0.170 28)",
+          "oklch(55% 0.170 28)",
+          "oklch(65% 0.153 28)",
+          "oklch(80% 0.102 28)",
+          "oklch(95% 0.043 28)"
+        ]
+      },
+      "remark-red": {
+        "role": "primary",
+        "displayName": "Remark Red",
+        "purpose": "Handwritten examiner remarks set as text.",
+        "tonalRamp": [
+          "oklch(15% 0.080 28)",
+          "oklch(25% 0.112 28)",
+          "oklch(35% 0.144 28)",
+          "oklch(45% 0.160 28)",
+          "oklch(55% 0.160 28)",
+          "oklch(65% 0.144 28)",
+          "oklch(80% 0.096 28)",
+          "oklch(95% 0.040 28)"
+        ]
+      },
+      "ballpoint-blue": {
+        "role": "secondary",
+        "displayName": "Ballpoint Blue",
+        "purpose": "Her handwriting and every interactive affordance.",
+        "tonalRamp": [
+          "oklch(15% 0.075 265)",
+          "oklch(25% 0.105 265)",
+          "oklch(35% 0.135 265)",
+          "oklch(45% 0.150 265)",
+          "oklch(55% 0.150 265)",
+          "oklch(65% 0.135 265)",
+          "oklch(80% 0.090 265)",
+          "oklch(95% 0.037 265)"
+        ]
+      },
+      "ballpoint-blue-press": {
+        "role": "secondary",
+        "displayName": "Ballpoint Blue Press",
+        "purpose": "Hover state of ink buttons.",
+        "tonalRamp": [
+          "oklch(15% 0.070 265)",
+          "oklch(25% 0.098 265)",
+          "oklch(35% 0.126 265)",
+          "oklch(45% 0.140 265)",
+          "oklch(55% 0.140 265)",
+          "oklch(65% 0.126 265)",
+          "oklch(80% 0.084 265)",
+          "oklch(95% 0.035 265)"
+        ]
+      },
+      "ink-wash": {
+        "role": "secondary",
+        "displayName": "Ink Wash",
+        "purpose": "Hover fill of paper controls; correct answer fill.",
+        "tonalRamp": [
+          "oklch(15% 0.025 265)",
+          "oklch(25% 0.035 265)",
+          "oklch(35% 0.045 265)",
+          "oklch(45% 0.050 265)",
+          "oklch(55% 0.050 265)",
+          "oklch(65% 0.045 265)",
+          "oklch(80% 0.030 265)",
+          "oklch(95% 0.013 265)"
+        ]
+      },
+      "stamp-violet": {
+        "role": "tertiary",
+        "displayName": "Stamp Violet",
+        "purpose": "Rubber-stamp status only.",
+        "tonalRamp": [
+          "oklch(15% 0.065 295)",
+          "oklch(25% 0.091 295)",
+          "oklch(35% 0.117 295)",
+          "oklch(45% 0.130 295)",
+          "oklch(55% 0.130 295)",
+          "oklch(65% 0.117 295)",
+          "oklch(80% 0.078 295)",
+          "oklch(95% 0.033 295)"
+        ]
+      },
+      "violet-wash": {
+        "role": "tertiary",
+        "displayName": "Violet Wash",
+        "purpose": "Fill of a port held by another process.",
+        "tonalRamp": [
+          "oklch(15% 0.025 300)",
+          "oklch(25% 0.035 300)",
+          "oklch(35% 0.045 300)",
+          "oklch(45% 0.050 300)",
+          "oklch(55% 0.050 300)",
+          "oklch(65% 0.045 300)",
+          "oklch(80% 0.030 300)",
+          "oklch(95% 0.013 300)"
+        ]
+      },
+      "graph-minor": {
+        "role": "neutral",
+        "displayName": "Graph Green Minor",
+        "purpose": "8px graph paper grid.",
+        "tonalRamp": [
+          "oklch(15% 0.015 150)",
+          "oklch(25% 0.021 150)",
+          "oklch(35% 0.027 150)",
+          "oklch(45% 0.030 150)",
+          "oklch(55% 0.030 150)",
+          "oklch(65% 0.027 150)",
+          "oklch(80% 0.018 150)",
+          "oklch(95% 0.007 150)"
+        ]
+      },
+      "graph-major": {
+        "role": "neutral",
+        "displayName": "Graph Green Major",
+        "purpose": "40px graph paper grid.",
+        "tonalRamp": [
+          "oklch(15% 0.020 150)",
+          "oklch(25% 0.028 150)",
+          "oklch(35% 0.036 150)",
+          "oklch(45% 0.040 150)",
+          "oklch(55% 0.040 150)",
+          "oklch(65% 0.036 150)",
+          "oklch(80% 0.024 150)",
+          "oklch(95% 0.010 150)"
+        ]
+      },
+      "graph-paper": {
+        "role": "neutral",
+        "displayName": "Graph Paper",
+        "purpose": "Graph paper ground (NASA record and certificate).",
+        "tonalRamp": [
+          "oklch(15% 0.005 150)",
+          "oklch(25% 0.007 150)",
+          "oklch(35% 0.009 150)",
+          "oklch(45% 0.010 150)",
+          "oklch(55% 0.010 150)",
+          "oklch(65% 0.009 150)",
+          "oklch(80% 0.006 150)",
+          "oklch(95% 0.003 150)"
+        ]
+      },
+      "print": {
+        "role": "neutral",
+        "displayName": "Print Black",
+        "purpose": "Body text and printed headings.",
+        "tonalRamp": [
+          "oklch(15% 0.003 85)",
+          "oklch(25% 0.004 85)",
+          "oklch(35% 0.005 85)",
+          "oklch(45% 0.006 85)",
+          "oklch(55% 0.006 85)",
+          "oklch(65% 0.005 85)",
+          "oklch(80% 0.004 85)",
+          "oklch(95% 0.002 85)"
+        ]
+      },
+      "print-soft": {
+        "role": "neutral",
+        "displayName": "Print Soft",
+        "purpose": "Field labels, notes, disclaimers.",
+        "tonalRamp": [
+          "oklch(15% 0.005 80)",
+          "oklch(25% 0.007 80)",
+          "oklch(35% 0.009 80)",
+          "oklch(45% 0.010 80)",
+          "oklch(55% 0.010 80)",
+          "oklch(65% 0.009 80)",
+          "oklch(80% 0.006 80)",
+          "oklch(95% 0.003 80)"
+        ]
+      },
+      "outline-brown": {
+        "role": "neutral",
+        "displayName": "Outline Brown",
+        "purpose": "1.5px outline of every object; frames; table head rules.",
+        "tonalRamp": [
+          "oklch(15% 0.010 60)",
+          "oklch(25% 0.014 60)",
+          "oklch(35% 0.018 60)",
+          "oklch(45% 0.020 60)",
+          "oklch(55% 0.020 60)",
+          "oklch(65% 0.018 60)",
+          "oklch(80% 0.012 60)",
+          "oklch(95% 0.005 60)"
+        ]
+      },
+      "highlighter": {
+        "role": "neutral",
+        "displayName": "Highlighter Yellow",
+        "purpose": "Text selection and Index hover sweep.",
+        "tonalRamp": [
+          "oklch(15% 0.080 98)",
+          "oklch(25% 0.112 98)",
+          "oklch(35% 0.144 98)",
+          "oklch(45% 0.160 98)",
+          "oklch(55% 0.160 98)",
+          "oklch(65% 0.144 98)",
+          "oklch(80% 0.096 98)",
+          "oklch(95% 0.040 98)"
+        ]
+      },
+      "tape": {
+        "role": "neutral",
+        "displayName": "Tape",
+        "purpose": "Photo tape, at 72% opacity with a faint brown edge.",
+        "tonalRamp": [
+          "oklch(15% 0.040 100)",
+          "oklch(25% 0.056 100)",
+          "oklch(35% 0.072 100)",
+          "oklch(45% 0.080 100)",
+          "oklch(55% 0.080 100)",
+          "oklch(65% 0.072 100)",
+          "oklch(80% 0.048 100)",
+          "oklch(95% 0.020 100)"
+        ]
+      },
+      "chit": {
+        "role": "neutral",
+        "displayName": "Chit",
+        "purpose": "The small LeetCode chit.",
+        "tonalRamp": [
+          "oklch(15% 0.015 95)",
+          "oklch(25% 0.021 95)",
+          "oklch(35% 0.027 95)",
+          "oklch(45% 0.030 95)",
+          "oklch(55% 0.030 95)",
+          "oklch(65% 0.027 95)",
+          "oklch(80% 0.018 95)",
+          "oklch(95% 0.007 95)"
+        ]
+      },
+      "disabled-paper": {
+        "role": "neutral",
+        "displayName": "Disabled Paper",
+        "purpose": "Disabled red stamp button.",
+        "tonalRamp": [
+          "oklch(15% 0.005 80)",
+          "oklch(25% 0.007 80)",
+          "oklch(35% 0.009 80)",
+          "oklch(45% 0.010 80)",
+          "oklch(55% 0.010 80)",
+          "oklch(65% 0.009 80)",
+          "oklch(80% 0.006 80)",
+          "oklch(95% 0.003 80)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Printed Display",
+        "purpose": "PRACTICAL FILE and INDEX only. Uppercase, Archivo width 68%."
+      },
+      "headline": {
+        "displayName": "Printed Headline",
+        "purpose": "Record and Annexure titles, max 20ch. Uppercase."
+      },
+      "title": {
+        "displayName": "Printed Title",
+        "purpose": "Practical frame titles, certificate titles, sub-sheets. Uppercase; 1.6rem below sm."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Record text; line-height equals the rule gap; max 68ch."
+      },
+      "label": {
+        "displayName": "Form Label",
+        "purpose": "Printed field labels (Name, Aim, Result, Date, Sign). Uppercase, print-soft."
+      },
+      "hand": {
+        "displayName": "Ballpoint Hand",
+        "purpose": "Her handwritten entries: Index, values, dates, step numbers. Ballpoint blue."
+      },
+      "hand-name": {
+        "displayName": "Ballpoint Name",
+        "purpose": "Her name on the front-page label; writes itself on once."
+      },
+      "stamp": {
+        "displayName": "Stamp",
+        "purpose": "Violet status stamps, 0.85–1.7rem. Uppercase."
+      },
+      "button-stamp": {
+        "displayName": "Red Stamp Label",
+        "purpose": "The email call to action. Uppercase."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Paper and ink buttons."
+      },
+      "code": {
+        "displayName": "Terminal",
+        "purpose": "Ports, printouts, code fragments only."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-place",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Placed: sheets slide up 18–28px and settle rotation over 0.8–0.95s; also collapse, end cards, meters."
+      },
+      {
+        "name": "ease-pen",
+        "value": "cubic-bezier(0.65, 0, 0.35, 1)",
+        "purpose": "Written: ink strokes draw by path length. Tick 0.45s, cross 0.4s, signature 1.4s."
+      },
+      {
+        "name": "ease-write-on",
+        "value": "cubic-bezier(0.45, 0, 0.25, 1)",
+        "purpose": "Name clip reveal, 1.1s, 0.45s delay, once on load."
+      },
+      {
+        "name": "spring-stamp",
+        "value": "spring(stiffness 520, damping 22–24)",
+        "purpose": "Pressed: stamps and the red stamp button land from a larger scale and steeper angle."
+      },
+      {
+        "name": "spring-switch",
+        "value": "spring(stiffness 500, damping 38)",
+        "purpose": "Fair copy / Rough work active segment slides."
+      },
+      {
+        "name": "duration-control",
+        "value": "140–160ms",
+        "purpose": "Hover and press transitions on buttons and links."
+      },
+      {
+        "name": "duration-highlight",
+        "value": "300ms ease-out",
+        "purpose": "Highlighter sweep behind an Index entry."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "MotionConfig reducedMotion=\"user\" + global CSS duration clamp",
+        "purpose": "All motion respects prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ],
+    "browserSurfaces": [
+      {
+        "name": "canvas",
+        "value": "#b07a45 (html:has(.pf-root))",
+        "purpose": "Overscroll and canvas match the kraft cover."
+      },
+      {
+        "name": "scrollbar",
+        "value": "scrollbar-color: #7a4f27 #b07a45",
+        "purpose": "Kraft-deep thumb on kraft track."
+      },
+      {
+        "name": "selection",
+        "value": "::selection { background: #ffe45c; color: inherit }",
+        "purpose": "Highlighter pen."
+      },
+      {
+        "name": "caret",
+        "value": "caret-color: #1d3d9a",
+        "purpose": "Ballpoint caret."
+      },
+      {
+        "name": "focus",
+        "value": "outline: 2px solid #b8241c; outline-offset: 3px",
+        "purpose": "Examiner red focus ring on every focusable element."
+      }
+    ],
+    "materials": [
+      {
+        "name": "kraft-fibre",
+        "value": "fractal noise SVG (baseFrequency .85, 3 octaves) over two hairline repeating gradients at 94deg and -3deg",
+        "purpose": "Fibrous kraft cover."
+      },
+      {
+        "name": "ruling",
+        "value": "1px #9cc3e4 line every rule gap (2rem records, 2.75rem Index, 1.75rem slip); offset -0.45rem in writing areas",
+        "purpose": "Ruled paper; text sits on the rule."
+      },
+      {
+        "name": "graph",
+        "value": "40px #c4e3cd major + 8px #dcefe2 at 55% minor on #f8fcf7",
+        "purpose": "Graph paper, NASA record and certificate only."
+      },
+      {
+        "name": "stamp-ink",
+        "value": "fractal noise alpha mask (baseFrequency 1.4), 160px tile",
+        "purpose": "Uneven rubber-stamp coverage."
+      },
+      {
+        "name": "tape",
+        "value": "4.25rem x 1.35rem, rgba(238,226,160,.72), 1px rgba(120,100,40,.35) edge, rotated -24deg",
+        "purpose": "Photo tape."
+      },
+      {
+        "name": "staple",
+        "value": "authored SVG 40x12: #5f656c crown, #d3d8de highlight, #2f3338 legs",
+        "purpose": "Joins certificates to the Annexure."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Red Stamp Button",
+      "kind": "button",
+      "refersTo": "button-stamp",
+      "description": "The one call to action: email Pragati. One per context; presses in at -1.5deg.",
+      "html": "<a class=\"ds-red-stamp\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"m3 7 9 6 9-6\"/></svg>Email Pragati</a>",
+      "css": ".ds-red-stamp { display: inline-flex; align-items: center; gap: 0.55rem; background: #b8241c; color: #fff; border: 2px solid #2b2118; border-radius: 4px; padding: 0.7rem 1.1rem 0.65rem; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-stretch: 75%; font-weight: 800; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.05em; line-height: 1; text-decoration: none; transform: rotate(-1.5deg); transition: background-color 160ms cubic-bezier(0.16,1,0.3,1), transform 160ms cubic-bezier(0.16,1,0.3,1); } .ds-red-stamp:hover { background: #9a1c15; } .ds-red-stamp:active { transform: rotate(-1.5deg) translateY(1px) scale(0.98); } .ds-red-stamp:focus-visible { outline: 2px solid #b8241c; outline-offset: 3px; }"
+    },
+    {
+      "name": "Paper Button",
+      "kind": "button",
+      "refersTo": "button-paper",
+      "description": "Secondary choices and replays: a plain outlined paper tab.",
+      "html": "<button class=\"ds-btn\" type=\"button\">Play again</button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 0.45rem; border: 1.5px solid #2b2118; border-radius: 4px; padding: 0.5rem 0.85rem 0.45rem; background: #fbfcf8; color: #1b1a17; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-weight: 650; font-size: 0.92rem; line-height: 1; cursor: pointer; transition: background-color 140ms, color 140ms, transform 140ms; } .ds-btn:hover { background: #eef3fc; color: #1d3d9a; } .ds-btn:active { transform: translateY(1px); } .ds-btn:focus-visible { outline: 2px solid #b8241c; outline-offset: 3px; } .ds-btn:disabled { opacity: 0.45; cursor: not-allowed; }"
+    },
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Starts a practical or moves one step forward. Ballpoint blue.",
+      "html": "<button class=\"ds-btn-ink\" type=\"button\">Next report &rarr;</button>",
+      "css": ".ds-btn-ink { display: inline-flex; align-items: center; gap: 0.45rem; border: 1.5px solid #2b2118; border-radius: 4px; padding: 0.5rem 0.85rem 0.45rem; background: #1d3d9a; color: #fff; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-weight: 650; font-size: 0.92rem; line-height: 1; cursor: pointer; transition: background-color 140ms, transform 140ms; } .ds-btn-ink:hover { background: #15307e; } .ds-btn-ink:active { transform: translateY(1px); } .ds-btn-ink:focus-visible { outline: 2px solid #b8241c; outline-offset: 3px; }"
+    },
+    {
+      "name": "Status Stamp",
+      "kind": "chip",
+      "refersTo": "status-stamp",
+      "description": "Violet rubber stamp with uneven ink. Status only: merged, deployed, nominated, graded.",
+      "html": "<p class=\"ds-stamp\">Merged</p>",
+      "css": ".ds-stamp { display: inline-flex; align-items: center; gap: 0.4em; margin: 0; border: 2.5px solid currentColor; border-radius: 4px; padding: 0.3em 0.6em 0.2em; color: #4f2e8c; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-stretch: 70%; font-weight: 800; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.06em; line-height: 1; transform: rotate(-5deg); -webkit-mask-image: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='s'><feTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='2'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 2.05'/></filter><rect width='100%' height='100%' filter='url(%23s)'/></svg>\"); mask-image: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='s'><feTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='2'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 2.05'/></filter><rect width='100%' height='100%' filter='url(%23s)'/></svg>\"); -webkit-mask-size: 160px 160px; mask-size: 160px 160px; }"
+    },
+    {
+      "name": "Apparatus Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Pill tag for apparatus and skills. The only round shape in the system.",
+      "html": "<ul class=\"ds-chips\"><li class=\"ds-chip\">Python</li><li class=\"ds-chip\">sockets</li><li class=\"ds-chip\">pocketpaw/pocketpaw</li></ul>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 0.375rem; list-style: none; margin: 0; padding: 0; } .ds-chip { display: inline-block; border: 1.25px solid #2b2118; border-radius: 999px; padding: 0.18rem 0.6rem 0.12rem; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-size: 0.82rem; font-weight: 500; background: #fbfcf8; color: #1b1a17; }"
+    },
+    {
+      "name": "Icon Link",
+      "kind": "button",
+      "refersTo": "icon-link",
+      "description": "Outlined paper tab for LinkedIn, GitHub and Resume beside the red stamp.",
+      "html": "<a class=\"ds-icon-link\" href=\"#\"><svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z\"/><path d=\"M14 3v6h6M8 13h8M8 17h5\"/></svg>Resume</a>",
+      "css": ".ds-icon-link { display: inline-flex; align-items: center; gap: 0.4rem; border: 1.5px solid #2b2118; border-radius: 4px; padding: 0.55rem 0.75rem 0.5rem; background: #fbfcf8; color: #1b1a17; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-weight: 600; font-size: 0.9rem; line-height: 1; text-decoration: none; transition: color 160ms, border-color 160ms, background-color 160ms; } .ds-icon-link:hover { color: #1d3d9a; border-color: #1d3d9a; background: #eef3fc; } .ds-icon-link:focus-visible { outline: 2px solid #b8241c; outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "White field outlined in brown; red focus ring; ballpoint caret.",
+      "html": "<input class=\"ds-input\" placeholder=\"Ask a support question…\" aria-label=\"Your question\" />",
+      "css": ".ds-input { min-width: 16rem; border: 1.5px solid #2b2118; border-radius: 3px; background: #fff; color: #1b1a17; padding: 0.5rem 0.75rem; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-size: 1rem; caret-color: #1d3d9a; } .ds-input::placeholder { color: #6d6a62; } .ds-input:focus-visible { outline: 2px solid #b8241c; outline-offset: 3px; }"
+    },
+    {
+      "name": "Reading Depth Switch",
+      "kind": "nav",
+      "refersTo": "copy-switch-active",
+      "description": "Top-bar radio switch on kraft: Fair copy (short read) or Rough work (every detail).",
+      "html": "<div class=\"ds-bar\"><a class=\"ds-wordmark\" href=\"#\">Pragati<span>.</span></a><div class=\"ds-switch\" role=\"radiogroup\" aria-label=\"Reading depth\"><button role=\"radio\" aria-checked=\"true\" class=\"is-on\">Fair copy</button><button role=\"radio\" aria-checked=\"false\">Rough work</button></div></div>",
+      "css": ".ds-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 3.5rem; padding: 0 1rem; background: #b07a45; border-bottom: 1.5px solid #2b2118; } .ds-wordmark { font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-stretch: 68%; font-weight: 800; font-size: 1.6rem; text-transform: uppercase; line-height: 0.9; color: #170f07; text-decoration: none; } .ds-wordmark span { color: #b8241c; } .ds-switch { display: flex; padding: 2px; background: #fbfcf8; border: 1.5px solid #2b2118; border-radius: 4px; } .ds-switch button { border: 0; background: transparent; border-radius: 3px; padding: 0.375rem 0.75rem; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-weight: 600; font-size: 0.82rem; color: #4a4740; cursor: pointer; transition: color 150ms, background-color 150ms; } .ds-switch button:hover { color: #1d3d9a; } .ds-switch button.is-on { background: #1d3d9a; color: #fff; } .ds-switch button:focus-visible { outline: 2px solid #b8241c; outline-offset: 3px; }"
+    },
+    {
+      "name": "Ruled Record Sheet",
+      "kind": "card",
+      "refersTo": "sheet",
+      "description": "A punched, ruled sheet with a red margin; every line of writing sits on a rule.",
+      "html": "<article class=\"ds-sheet\"><span class=\"ds-hole ds-hole-a\"></span><span class=\"ds-hole ds-hole-b\"></span><span class=\"ds-margin\"></span><h2 class=\"ds-printed\">Reliable port fallback</h2><div class=\"ds-writing\"><p class=\"ds-label\">Aim</p><p>Stop pocketpaw from crashing at startup when its port is already taken.</p><p class=\"ds-label\">Result</p><p><strong>Merged into pocketpaw.</strong></p></div></article>",
+      "css": ".ds-sheet { position: relative; max-width: 40rem; background: #fbfcf8; border: 1.5px solid #2b2118; border-radius: 3px; padding: 1.75rem 1.5rem 2rem 4.4rem; color: #1b1a17; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; transform: rotate(-0.35deg); } .ds-margin { position: absolute; top: 0; bottom: 0; left: 3.2rem; width: 2px; background: #d7332a; } .ds-hole { position: absolute; left: 0.9rem; width: 0.875rem; height: 0.875rem; border-radius: 50%; border: 1.5px solid #2b2118; background: #b07a45; } .ds-hole-a { top: 22%; } .ds-hole-b { bottom: 22%; } .ds-printed { margin: 0; font-stretch: 68%; font-weight: 800; font-size: 2.4rem; line-height: 0.9; text-transform: uppercase; letter-spacing: 0.005em; } .ds-writing { margin-top: 1.5rem; background-image: linear-gradient(to bottom, transparent calc(2rem - 1px), #9cc3e4 calc(2rem - 1px), #9cc3e4 2rem); background-size: 100% 2rem; background-position: 0 -0.45rem; } .ds-writing p { margin: 0; line-height: 2rem; font-size: 1.04rem; } .ds-label { font-stretch: 80%; font-weight: 600; font-size: 0.72rem !important; text-transform: uppercase; letter-spacing: 0.06em; color: #4a4740; }"
+    },
+    {
+      "name": "Index Row",
+      "kind": "custom",
+      "refersTo": "sheet",
+      "description": "One ruled band of the Index: handwritten entry, highlighter sweep on hover, red tick in the Sign column.",
+      "html": "<table class=\"ds-index\"><tbody><tr><td class=\"ds-no\">3.</td><td><a class=\"ds-entry\" href=\"#\"><span>Port fallback (PR #906)</span></a></td><td class=\"ds-date\">April 2026</td><td class=\"ds-sign\"><svg width=\"28\" height=\"28\" viewBox=\"0 0 32 32\" fill=\"none\" aria-hidden=\"true\"><path d=\"M4 17.5c2.6 1.8 5 4.4 7 7.6C15.4 16.4 21 9.2 28.5 4\" stroke=\"#d7332a\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></td></tr></tbody></table>",
+      "css": ".ds-index { width: 100%; max-width: 40rem; border-collapse: collapse; background: #fbfcf8 linear-gradient(to bottom, transparent calc(2.75rem - 1px), #9cc3e4 calc(2.75rem - 1px), #9cc3e4 2.75rem); background-size: 100% 2.75rem; } .ds-index td { height: 2.75rem; vertical-align: bottom; line-height: 1.375rem; font-family: Kalam, 'Segoe Print', cursive; color: #1d3d9a; } .ds-no { width: 2.5rem; font-size: 1.125rem; } .ds-date { font-size: 1.02rem; } .ds-sign { width: 3.5rem; text-align: center; line-height: 0 !important; } .ds-entry { color: #1d3d9a; font-size: 1.28rem; text-decoration: none; } .ds-entry span { background: linear-gradient(#ffe45c, #ffe45c) no-repeat 0 78% / 0% 62%; transition: background-size 300ms ease-out; } .ds-entry:hover span, .ds-entry:focus-visible span { background-size: 100% 62%; } .ds-entry:focus-visible { outline: 2px solid #b8241c; outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Practical File",
+    "overview": "The portfolio is a B.Tech practical file laid open on a desk. A fibrous kraft cover is the ground. White sheets sit on it, ruled in pale blue with a red margin, punched for binding, and joined by tape and staples. Every piece of work is an experiment record with Aim, Apparatus, Procedure (or Observation) and Result. The visitor is the examiner: a red pen ticks each record in the Index as it is read, and the viva earns the examiner's signature.\n\nThe world speaks in four inks, and each ink has one job. Printed-form black is the institution: condensed uppercase Archivo for headings and field labels. Ballpoint blue is Pragati's own hand: Kalam for the entries she writes, and the colour of every interactive affordance she offers. Examiner red is the visitor's pen and the one call to action. Violet is the rubber stamp that records status. Monospace appears only where a terminal would print: code, ports and printouts.\n\nDepth is physical but flat. Sheets are outlined in a dark brown line, turned a fraction of a degree, and placed on the desk with motion. Nothing casts a shadow. The density is that of a real record book: one line of writing per ruled line, generous margins, and short sheets that a recruiter can scan in ten seconds while an engineer can switch to \"Rough work\" for every step.",
+    "keyCharacteristics": [
+      "Kraft cover ground with procedural fibre noise; white sheets on top.",
+      "Writing sits on the rules: body line-height equals the rule gap.",
+      "Four inks with fixed jobs: print, ballpoint blue, examiner red, stamp violet.",
+      "Outlined objects, slight rotations, no cast shadows.",
+      "Motion grammar: sheets placed, ink that writes, stamps that press.",
+      "Two reading depths: Fair copy (short) and Rough work (every detail)."
+    ],
+    "rules": [
+      {
+        "name": "The Four Inks Rule",
+        "body": "Print black is the form, ballpoint blue is her voice and her controls, red is the examiner, violet is status. Never give a colour a second job.",
+        "section": "colors"
+      },
+      {
+        "name": "The Examiner's Pen Rule",
+        "body": "Red appears only where an examiner would put a pen, where the paper prints its margin, where something fails, and on the single action to email her. Red is never decoration, body text, a heading, or a status label.",
+        "section": "colors"
+      },
+      {
+        "name": "The Stamp Rule",
+        "body": "Any state that a clerk would stamp (merged, deployed, nominated, verified, graded) is a violet rubber stamp. Status is never a coloured pill or a green badge.",
+        "section": "colors"
+      },
+      {
+        "name": "The Filled-In Form Rule",
+        "body": "Printed condensed caps ask; Kalam answers. A label is always printed, and the value that a student would write by hand is always Kalam in ballpoint blue.",
+        "section": "typography"
+      },
+      {
+        "name": "The Terminal Only Rule",
+        "body": "Monospace is for what a machine prints: port numbers, printout lines, code. Never use it for labels, metadata, dates or decoration.",
+        "section": "typography"
+      },
+      {
+        "name": "The Outlined Object Rule",
+        "body": "Every object is outlined, not lifted. A sheet, button, chip, photo or input gets a 1.25–2.5px outline-brown border; a soft or offset drop shadow never appears. (An inset 2px line under the Index table head is a drawn rule, not a shadow.)",
+        "section": "elevation"
+      },
+      {
+        "name": "The Desk Rule",
+        "body": "Sheets lie on the desk at a slight angle and settle when placed. Rotation stays under 3°, and content inside a sheet is never rotated except stamps, remarks and attached certificates.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do set every line of record text on a rule: line-height equals the rule gap (2rem in records, 2.75rem in the Index), and field spacing is one rule.",
+      "Do write labels in the printed voice (Archivo 600, width 80%, uppercase, 0.72rem) and her values in Kalam ballpoint blue.",
+      "Do outline every object with a 1.5px outline-brown border and place sheets at under 3° of rotation.",
+      "Do keep one red stamp button per context, and make it email Pragati.",
+      "Do record status as a violet rubber stamp with the noise mask.",
+      "Do end every practical on a red-ink remark and the red stamp button.",
+      "Do state what is simulated in the practical frame's note.",
+      "Do animate with the three verbs only: placed, written, pressed."
+    ],
+    "donts": [
+      "Don't use a cast or offset shadow on anything. Depth is outline, overlap and material.",
+      "Don't use red for body text, headings, decoration or status. Red is the examiner's pen, the printed margin, a failure, the focus ring and the email action.",
+      "Don't use violet for anything that is not a status stamp.",
+      "Don't use monospace for labels, dates, metadata or decoration; it is for code, ports and printouts only.",
+      "Don't set Kalam for printed form text, or printed caps for her handwritten entries.",
+      "Don't use graph paper except for the NASA record and its certificate.",
+      "Don't round sheets or buttons beyond 4px; only chips are pills."
+    ]
+  }
+}

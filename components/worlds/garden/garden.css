@@ -1,0 +1,147 @@
+/* Gravity-Rain Garden: browser surfaces and the few things Tailwind does not say well. */
+
+.garden-root {
+  --g-ground: #2a332f;
+  --g-ground-deep: #212925;
+  --g-sky: #36423c;
+  --g-mist: #43504a;
+  --g-panel: #313b36;
+  --g-ink: #edf0e8;
+  --g-ink-soft: #c6d0c7;
+  --g-ink-faint: #a3b0a6;
+  --g-blue: #8cc4f0;
+  --g-blue-deep: #13202b;
+  --g-red: #f0907a;
+  --g-clear: #e6efe8;
+  --g-moon: #ecdfae;
+  --g-seed: #b4cf9f;
+  --g-root: #d4b38a;
+  --g-black: #0b0e0c;
+
+  background: var(--g-ground);
+  color: var(--g-ink);
+  font-family: var(--font-garden-body), ui-rounded, system-ui, sans-serif;
+  caret-color: var(--g-blue);
+  scrollbar-color: var(--g-mist) var(--g-ground-deep);
+  font-feature-settings: "kern";
+}
+
+.garden-root ::selection {
+  background: rgba(140, 196, 240, 0.38);
+  color: var(--g-ink);
+}
+
+.garden-root :where(a, button, input, select, [tabindex]):focus-visible {
+  outline: 2px solid var(--g-moon);
+  outline-offset: 3px;
+  border-radius: 999px;
+}
+
+.garden-root :where(input[type="text"], textarea):focus-visible {
+  border-radius: 14px;
+}
+
+.garden-root a {
+  text-underline-offset: 0.24em;
+  text-decoration-thickness: 1px;
+}
+
+.garden-root ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.garden-root ::-webkit-scrollbar-thumb {
+  background: var(--g-mist);
+  border-radius: 999px;
+}
+.garden-root ::-webkit-scrollbar-track {
+  background: var(--g-ground-deep);
+}
+
+.garden-root .garden-display {
+  font-family: var(--font-garden-display), ui-rounded, system-ui, sans-serif;
+}
+
+.garden-root .garden-num {
+  font-variant-numeric: tabular-nums;
+}
+
+.garden-root .garden-mono {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.garden-root .garden-bent {
+  margin: 0;
+  line-height: 0;
+}
+
+.garden-root .garden-bent-text {
+  font-family: var(--font-garden-display), ui-rounded, system-ui, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* The garden sky behind the hero canvas. */
+.garden-root .garden-sky {
+  background:
+    radial-gradient(120% 70% at 75% 0%, #46544c 0%, rgba(70, 84, 76, 0) 60%),
+    linear-gradient(180deg, #3a4741 0%, #303b35 55%, #2a332f 100%);
+}
+
+.garden-root .garden-canvas-wrap {
+  touch-action: none;
+  cursor: crosshair;
+}
+.garden-root .garden-canvas-wrap:focus-visible {
+  outline: 2px solid var(--g-moon);
+  outline-offset: -4px;
+  border-radius: 18px;
+}
+
+/* A thin river between regions: the water path you follow down the page. */
+.garden-root .garden-river {
+  display: block;
+  width: 100%;
+  height: 44px;
+}
+
+.garden-root .garden-pad {
+  transition:
+    background-color 160ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 160ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 160ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.garden-root .garden-pad:active {
+  transform: scale(0.96);
+}
+
+.garden-root .garden-press {
+  transition:
+    background-color 150ms cubic-bezier(0.16, 1, 0.3, 1),
+    color 150ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 150ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.garden-root .garden-press:active {
+  transform: translateY(1px);
+}
+
+.garden-root .garden-range {
+  accent-color: var(--g-moon);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .garden-root .garden-pad,
+  .garden-root .garden-press {
+    transition: none;
+  }
+}
+
+.garden-root p,
+.garden-root li {
+  text-wrap: pretty;
+}
+.garden-root :where(h1, h2, h3) {
+  text-wrap: balance;
+}
