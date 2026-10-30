@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Hackathon Badge — first viewport sketch</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1440px; height: 900px; overflow: hidden; }
+  body { background: #0B1F3A; font-family: Arial, sans-serif; color: #F2F4F7; position: relative; }
+  .nav { position: absolute; top: 0; left: 0; right: 0; height: 72px; display: flex; justify-content: space-between; align-items: center; padding: 0 64px; }
+  .nav b { font-size: 26px; }
+  .copy { position: absolute; left: 96px; top: 240px; width: 640px; }
+  .copy h1 { font-size: 96px; line-height: .95; letter-spacing: -.02em; }
+  .copy p { font-size: 26px; margin-top: 28px; color: #c4cbd6; }
+  .btn { display: inline-block; margin-top: 40px; background: #FF6A13; color: #0B1F3A; font-size: 26px; padding: 18px 30px; border-radius: 6px; }
+  .ribbon { position: absolute; left: 1040px; top: 0; width: 40px; height: 300px; background: repeating-linear-gradient(0deg, #FF6A13 0 22px, #1BA39C 22px 44px); transform: rotate(6deg); transform-origin: top; }
+  .badge { position: absolute; left: 900px; top: 290px; width: 360px; height: 520px; background: #F2F4F7; border-radius: 22px; transform: rotate(6deg); color: #0B1F3A; padding: 36px; }
+  .badge .ph { width: 140px; height: 160px; background: #9aa6b8; border-radius: 10px; }
+  .badge h2 { font-size: 44px; margin-top: 28px; line-height: 1; }
+  .badge .tag { margin-top: 18px; display: inline-block; background: #1BA39C; color: #fff; font-size: 24px; padding: 8px 14px; border-radius: 4px; }
+  .badge .lvl { position: absolute; left: 0; right: 0; bottom: 0; height: 90px; background: #FF6A13; border-radius: 0 0 22px 22px; }
+</style>
+</head>
+<body>
+  <div class="nav"><b>PRAGATI.</b><b>Email</b></div>
+  <div class="copy">
+    <h1>Backend engineer. Hackathon lead.</h1>
+    <p>Python, APIs, applied AI. NASA Space Apps Global Nominee.</p>
+    <div class="btn">Email Pragati</div>
+  </div>
+  <div class="ribbon"></div>
+  <div class="badge">
+    <div class="ph"></div>
+    <h2>Pragati Srivastava</h2>
+    <div class="tag">Participant · Team Lead</div>
+    <div class="lvl"></div>
+  </div>
+</body>
+</html>

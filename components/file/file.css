@@ -1,0 +1,296 @@
+.pf-root {
+  --kraft: #b07a45;
+  --kraft-deep: #7a4f27;
+  --kraft-ink: #170f07;
+  --paper: #fbfcf8;
+  --rule: #9cc3e4;
+  --margin: #d7332a;
+  --red: #b8241c;
+  --red-press: #9a1c15;
+  --red-ink: #8f1912;
+  --ink: #1d3d9a;
+  --violet: #4f2e8c;
+  --graph: #dcefe2;
+  --graph-major: #c4e3cd;
+  --print: #1b1a17;
+  --print-soft: #4a4740;
+  --line: #2b2118;
+  --highlight: #ffe45c;
+  --rule-gap: 2rem;
+
+  min-height: 100vh;
+  width: 100%;
+  color: var(--print);
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  font-stretch: 100%;
+  background-color: var(--kraft);
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .2  0 0 0 0 .12  0 0 0 0 .05  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"),
+    repeating-linear-gradient(94deg, rgba(60, 35, 10, 0.06) 0 1px, transparent 1px 9px),
+    repeating-linear-gradient(-3deg, rgba(255, 235, 200, 0.05) 0 2px, transparent 2px 13px);
+  caret-color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+html:has(.pf-root) {
+  scrollbar-color: var(--kraft-deep, #7a4f27) #b07a45;
+  background: #b07a45;
+}
+
+.pf-root ::selection {
+  background: var(--highlight);
+  color: inherit;
+}
+
+.pf-root :focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.pf-root a {
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: 1px;
+}
+
+.pf-root p,
+.pf-root li,
+.pf-root dd {
+  text-wrap: pretty;
+}
+
+/* Printed-form voice */
+.pf-printed {
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  font-stretch: 68%;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+  line-height: 0.9;
+}
+
+.pf-label {
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  font-stretch: 80%;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+  color: var(--print-soft);
+}
+
+.pf-hand {
+  font-family: var(--font-kalam), cursive;
+  color: var(--ink);
+}
+
+.pf-code {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.86em;
+}
+
+/* Paper */
+.pf-sheet {
+  position: relative;
+  background-color: var(--paper);
+  border: 1.5px solid var(--line);
+  border-radius: 3px;
+}
+
+.pf-ruled {
+  background-image: linear-gradient(to bottom, transparent calc(var(--rule-gap) - 1px), var(--rule) calc(var(--rule-gap) - 1px), var(--rule) var(--rule-gap));
+  background-size: 100% var(--rule-gap);
+  background-position: 0 var(--rule-offset, 0);
+  background-repeat: repeat;
+}
+
+/* Every line of writing sits on a rule: one line per rule gap, rules lifted to the baseline. */
+.pf-writing {
+  --rule-offset: -0.45rem;
+}
+
+.pf-writing :where(p, li, dt, dd) {
+  line-height: var(--rule-gap);
+}
+
+.pf-writing .pf-stamp {
+  line-height: 1;
+}
+
+.pf-graph {
+  background-image:
+    linear-gradient(to right, var(--graph-major) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--graph-major) 1px, transparent 1px),
+    linear-gradient(to right, color-mix(in srgb, var(--graph) 55%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--graph) 55%, transparent) 1px, transparent 1px);
+  background-size: 40px 40px, 40px 40px, 8px 8px, 8px 8px;
+  background-color: #f8fcf7;
+}
+
+.pf-marginLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--margin-x, 3.5rem);
+  width: 2px;
+  background: var(--margin);
+  transform-origin: top;
+}
+
+.pf-tape {
+  position: absolute;
+  width: 4.25rem;
+  height: 1.35rem;
+  background: rgba(238, 226, 160, 0.72);
+  border: 1px solid rgba(120, 100, 40, 0.35);
+}
+
+/* Rubber stamp: violet ink with uneven coverage */
+.pf-stamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  border: 2.5px solid currentColor;
+  border-radius: 4px;
+  padding: 0.3em 0.6em 0.2em;
+  color: var(--violet);
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  font-stretch: 70%;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='s'><feTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='2'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 2.05'/></filter><rect width='100%' height='100%' filter='url(%23s)'/></svg>");
+  mask-size: 160px 160px;
+}
+
+/* The primary action: a red stamp you press */
+.pf-redStamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: var(--red);
+  color: #fff;
+  border: 2px solid var(--line);
+  border-radius: 4px;
+  padding: 0.7rem 1.1rem 0.65rem;
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  font-stretch: 75%;
+  font-weight: 800;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1), transform 160ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pf-redStamp:hover {
+  background: var(--red-press);
+}
+
+.pf-redStamp:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+.pf-redStamp:disabled {
+  background: #c9c4bb;
+  color: #4a4740;
+  cursor: not-allowed;
+}
+
+.pf-iconLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1.5px solid var(--line);
+  border-radius: 4px;
+  padding: 0.55rem 0.75rem 0.5rem;
+  background: var(--paper);
+  color: var(--print);
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1;
+  transition: color 160ms, border-color 160ms, background-color 160ms;
+}
+
+.pf-iconLink:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+  background: #f1f5fd;
+}
+
+.pf-inkLink {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--ink) 40%, transparent);
+  transition: text-decoration-color 160ms;
+}
+
+.pf-inkLink:hover {
+  text-decoration-color: var(--ink);
+}
+
+.pf-chip {
+  display: inline-block;
+  border: 1.25px solid var(--line);
+  border-radius: 999px;
+  padding: 0.18rem 0.6rem 0.12rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  background: var(--paper);
+}
+
+.pf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1.5px solid var(--line);
+  border-radius: 4px;
+  padding: 0.5rem 0.85rem 0.45rem;
+  background: var(--paper);
+  font-weight: 650;
+  font-size: 0.92rem;
+  line-height: 1;
+  transition: background-color 140ms, color 140ms, transform 140ms;
+}
+
+.pf-btn:hover:not(:disabled) {
+  background: #eef3fc;
+  color: var(--ink);
+}
+
+.pf-btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.pf-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.pf-btnInk {
+  background: var(--ink);
+  color: #fff;
+}
+
+.pf-btnInk:hover:not(:disabled) {
+  background: #15307e;
+  color: #fff;
+}
+
+
+/* The student's name writes itself onto the label once, on load */
+.pf-writeOn {
+  display: inline-block;
+  animation: pf-write 1.1s cubic-bezier(0.45, 0, 0.25, 1) 0.45s both;
+}
+
+@keyframes pf-write {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
