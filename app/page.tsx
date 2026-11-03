@@ -1,5 +1,5 @@
-import { PracticalFile } from "@/components/file/PracticalFile";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return <PracticalFile />;
+  redirect("/worlds/badge");
 }
