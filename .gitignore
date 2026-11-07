@@ -46,5 +46,6 @@ next-env.d.ts
 /.impeccable/review/
 /.impeccable/questions/
 
-# Contains a phone number; keep out of the public repo until a redacted version exists
-/public/Pragati-Srivastava-Resume.pdf
+
+# Copied from node_modules by scripts/copy-mediapipe.mjs
+/public/vision/wasm/

@@ -1,34 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { MotionProvider } from "@/components/MotionProvider";
-import { WorldSwitcher } from "@/components/WorldSwitcher";
+import { Archivo, Overpass, Overpass_Mono } from "next/font/google";
 import "./globals.css";
+import "@/components/badge/badge.css";
+import "@/components/badge/hand-booth.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// Archivo's width axis gives the condensed print of event badges and the wide face of zone signage.
+const display = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--badge-display", display: "swap" });
+// Overpass descends from Highway Gothic, the wayfinding face: right for a venue floor.
+const body = Overpass({ subsets: ["latin"], variable: "--badge-body", display: "swap" });
+const mono = Overpass_Mono({ subsets: ["latin"], variable: "--badge-mono", display: "swap" });
 
 export const metadata: Metadata = {
   title: "Pragati Srivastava — Backend Engineer & Developer",
   description:
-    "Portfolio of Pragati Srivastava, a computer science undergraduate building backend systems, APIs, and applied AI projects.",
+    "Pragati Srivastava, backend engineer: Python backends, REST APIs, and applied AI. Team Lead at Smart India Hackathon 2026.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
+    <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
-        <MotionProvider>{children}</MotionProvider>
-        <WorldSwitcher />
+        <div className={`badge-fonts ${display.variable} ${body.variable} ${mono.variable}`}>{children}</div>
       </body>
     </html>
   );
