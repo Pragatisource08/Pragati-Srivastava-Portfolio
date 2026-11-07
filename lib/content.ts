@@ -17,6 +17,8 @@ export const links = {
   email: "pragatisrivastava9a@gmail.com",
   mailto:
     "mailto:pragatisrivastava9a@gmail.com?subject=Hello%20Pragati%20%E2%80%94%20from%20your%20portfolio",
+  mailtoHandGesture:
+    "mailto:pragatisrivastava9a@gmail.com?subject=Your%20hand%20gesture%20recognition%20project",
   linkedin: "https://www.linkedin.com/in/pragati-srivastava-283431321/",
   github: "https://github.com/Pragatisource08",
   resume: "/Pragati-Srivastava-Resume.pdf",
@@ -53,7 +55,7 @@ export type Project = {
   slug: string;
   name: string;
   tagline: string;
-  context: string;
+  context?: string;
   aim: string;
   points: string[];
   stack: string[];
@@ -93,7 +95,6 @@ export const projects: Project[] = [
     slug: "finances",
     name: "Track Your Finances",
     tagline: "A personal finance tracker with filters, export, and charts.",
-    context: "Full-stack project",
     aim: "Record expenses and see where the money goes.",
     points: [
       "Built Flask routes and blueprints for expense submission, retrieval, and filtering across the full request-response cycle, backed by a relational SQLite schema through SQLAlchemy.",
@@ -104,6 +105,19 @@ export const projects: Project[] = [
       label: "View source",
       url: "https://github.com/Pragatisource08/Personal-Finance-Tracker-",
     },
+  },
+  {
+    slug: "hand-gesture",
+    name: "Hand Gesture Recognition",
+    tagline: "Real-time hand tracking that runs entirely in the browser.",
+    aim: "Recognise hand gestures from a webcam in real time, with no server.",
+    points: [
+      "Tracks 21 hand landmarks in every video frame with MediaPipe's hand landmarker, on the GPU with a CPU fallback.",
+      "Works out which fingers are extended, then classifies Fist, Open Palm, Thumbs Up, and Peace Sign with rule-based logic scaled to hand size.",
+      "Holds each gesture for 300 ms before accepting it, so single-frame flicker never reaches the screen.",
+    ],
+    stack: ["Next.js", "TypeScript", "MediaPipe"],
+    link: { label: "View source", url: "https://github.com/Pragatisource08/hand-gesture-recognition" },
   },
 ];
 

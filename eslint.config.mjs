@@ -15,6 +15,8 @@ const eslintConfig = defineConfig([
     // Vendored Impeccable skill scripts and generated decision files.
     ".claude/**",
     ".impeccable/**",
+    // MediaPipe runtime copied from node_modules at build time.
+    "public/vision/**",
   ]),
 ]);
 
