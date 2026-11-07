@@ -2,26 +2,26 @@
 version: 1
 slug: "app-page-tsx"
 primary_target: "app/page.tsx"
-related_targets: []
+related_targets: ["components/badge/HandBooth.tsx"]
 ---
 
-Scope: the home route `/`, Experience mode. Audience: recruiters first (ten-second scan), engineers second (evidence on demand). Action: email Pragati. Proof: the CSRBOX internship, three projects, two merged PRs, recognition — all from `lib/content.ts`. Constraint: the portrait is 400×400, so it renders at 200 CSS px or less.
+Scope: the home route `/`, Experience mode. The owner chose this direction from nine built worlds and it is live. Audience: recruiters first (ten-second scan), engineers second (All-access pass). Action: email Pragati. Proof: all facts come from `lib/content.ts`. Constraint: the portrait is 400×400, so it renders at 200 CSS px or less. Keep the bottom of the page free of review tools: this surface is public.
 
-Memorable moment: the visitor is the examiner. A red pen ticks the Index as each record is read, and the Viva earns the examiner's signature, which turns into "Call her for the interview".
+Memorable moment: an event badge on a lanyard the visitor can grab, and a live booth where their own hand fills a stamp card.
 
 Unresolved: none.
 
 ## Direction contract
 
-THESIS: Her portfolio is her B.Tech practical file. Every piece of work is an experiment record (Aim, Apparatus, Procedure, Result) that the visitor checks in red as the examiner. It refuses both the white hero over a card grid and the dark terminal.
+THESIS: Her portfolio is a hackathon floor: her identity is an event badge on a physics lanyard, and each part of her work is an access zone. It refuses the white hero over a card grid and the dark terminal.
 
-OWN-WORLD: Kraft-paper file cover (#B07A45, fibrous) as the ground; white sheets with blue rules (#8DB7E0) and a red margin (#D7332A); ballpoint-blue ink (#1D3D9A) for her voice; examiner red for ticks, remarks, and the call to action; violet rubber stamps (#5E3A9E) for status; green graph paper for the NASA record. Archivo condensed as the printed-form face, Archivo for body, Kalam for handwritten index entries and margin notes, Geist Mono only for errors and ports. Objects are outlined with no cast shadows; staples and tape join sheets; yellow highlighter is the text selection.
+OWN-WORLD: Deep navy ground (#0B1F3A), badge white (#F2F4F7), lanyard orange (#FF6A13), teal (#1BA39C). Printed PVC, woven ribbon, hanging zone signs, roll-up banners, queue tokens, wristbands, sticker sheets, booth tables. Archivo at varied widths for print and signage, Overpass for body, Overpass Mono only for ports, logs, and data.
 
-STORY: The examiner opens the file, reads the front-page label and the Index, works through each record (and performs the experiments: verify a report, boot the server, hit the cache), sits the viva, signs, and emails her.
+STORY: The visitor meets the badge, reads the hook, walks the zones in order (Experience, Projects, Open source, the Demo-day booth, the Hands-on booth, Recognition, Skills, Education, the Judging round), and emails her from any game or the help desk.
 
-FIRST VIEWPORT: The open file fills the viewport on kraft. Left sheet: the printed front page, PRACTICAL FILE at display scale, a taped passport photo, label fields (name, branch, session, focus, submitted to: you), and the red "Email Pragati" stamp-button with LinkedIn, GitHub, and Resume beside it. Right sheet: the ruled Index, seven numbered experiments in blue handwriting, a Sign column. A thin kraft bar above carries the wordmark, the Fair copy / Rough work switch, and a mail icon.
+FIRST VIEWPORT: Left, the badge hanging from the top edge. Right, the wordmark, the Visitor pass / All-access switch, the hook naming her and what she builds, and Email Pragati with LinkedIn, GitHub, Resume, and copy address.
 
-FORM: The practical file, position 4 of 7 on the grounded list. seed:b556f1ba1a9453eb
-Signature interaction: red-ink ticks drawn into the Index Sign column as each record is read; the viva signature unlocks the interview email. Motion grammar: ink that writes (stroke draws), sheets placed on the desk, stamps that press.
+FORM: The event floor, the pick card of the direction round, chosen by the owner after all nine were built. seed:b556f1ba1a9453eb
+Signature interaction: the draggable, flippable lanyard badge. Second moment: the Hands-on booth, a kiosk and a paper stamp card on a booth table, where the sample poses and the live camera run through her real analyzer and classifier, and a complete card ends at the email.
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance

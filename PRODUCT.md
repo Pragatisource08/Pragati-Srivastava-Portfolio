@@ -26,9 +26,11 @@ Visitors arrive from LinkedIn, a resume link, GitHub, or a job application. Many
 
 ## Capabilities and Constraints
 
-- Next.js 16 (App Router, Turbopack), React 19, Tailwind CSS v4, `motion` for animation.
+- Next.js 16 (App Router, Turbopack), React 19, Tailwind CSS v4.
 - Static content; no backend, database, or form handling. Contact is a `mailto:` link.
 - Interactive mini-games are wanted by the owner. Each game's call to action is emailing Pragati.
+- One public route: `/`. The owner chose the Hackathon Badge direction; old `/worlds/*` links redirect to `/`.
+- The hand-gesture demo runs on the visitor's device. Video is never recorded or uploaded, and the Content-Security-Policy blocks connections to other servers, including MediaPipe's usage metrics. The MediaPipe runtime and model are served from this site, and load only after the visitor turns on the camera.
 - The portrait asset is 400×400 px, so it cannot render larger than about 200 CSS px without visible softness.
 
 ## Brand Commitments
@@ -45,7 +47,7 @@ Visitors arrive from LinkedIn, a resume link, GitHub, or a job application. Many
 - GitHub: https://github.com/Pragatisource08
 - Experience: CSRBOX, Generative AI and Cloud Computing Intern, June–August 2026, remote. Cloud 9 AI assistant; Python pipeline to Google Gemini on AWS EC2; Pinecone knowledge base storing responses only when marked helpful; embedding similarity search to serve repeat queries without a new API call.
 - Open source: pocketpaw/pocketpaw, April 2026. PR #906 (merged): port fallback across 8888–8897 with socket pre-checks, catching EADDRINUSE / WinError 10048. PR #845 (merged): dark-mode select dropdown fix.
-- Projects: BharatRitu (Smart India Hackathon 2026; Next.js Route Handlers GET/POST/PATCH; four-signal credibility engine marking reports Verified / Under Review / Flagged; Open-Meteo with 5-second timeout and fail-soft fallback). Track Your Finances (Flask blueprints, SQLAlchemy, SQLite, CSV export, Chart.js). AirQuality (CesiumJS 3D globe of real AQI data; NASA Space Apps Global Nominee out of 11,500+ participants across 167+ countries; live demo).
+- Projects: BharatRitu (Smart India Hackathon 2026; Next.js Route Handlers GET/POST/PATCH; four-signal credibility engine marking reports Verified / Under Review / Flagged; Open-Meteo with 5-second timeout and fail-soft fallback). Track Your Finances (Flask blueprints, SQLAlchemy, SQLite, CSV export, Chart.js). AirQuality (CesiumJS 3D globe of real AQI data; NASA Space Apps Global Nominee out of 11,500+ participants across 167+ countries; live demo). Hand Gesture Recognition (https://github.com/Pragatisource08/hand-gesture-recognition; Next.js, TypeScript, MediaPipe; 21 hand landmarks per frame in the browser; rule-based Fist, Open Palm, Thumbs Up, and Peace Sign; 300 ms stability check; live in the Hands-on booth).
 - Recognition: Smart India Hackathon 2026 Team Lead; NASA Space Apps Challenge 2025 Global Nominee; 30+ LeetCode problems solved.
 - Education: Dr. A.P.J. Abdul Kalam Technical University, B.Tech CSE, 2024–2028, CGPA 7.3/10.
 - Skills: Python, C++, TypeScript, JavaScript; Flask, Next.js, REST APIs, SQLAlchemy, Jinja2, Chart.js, CesiumJS; SQLite, MySQL, Pinecone; Google Gemini API, vector embeddings, similarity search; Git, GitHub, AWS EC2.

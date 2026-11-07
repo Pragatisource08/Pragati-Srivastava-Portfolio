@@ -1,0 +1,375 @@
+/* E. Hands-on booth: a kiosk and a stamp card on the booth table. Scoped under .badge-root. */
+
+.badge-root .badge-hands {
+  display: grid;
+  gap: 26px;
+}
+
+.badge-root .badge-hand {
+  display: block;
+  overflow: visible;
+}
+
+.badge-root .badge-hand line {
+  stroke: var(--bone, var(--teal-ink));
+  stroke-width: var(--bone-width, 2px);
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.badge-root .badge-hand circle {
+  fill: var(--joint, var(--orange));
+}
+
+.badge-root .badge-art-hand {
+  width: 132px;
+  height: 118px;
+  --bone-width: 3px;
+}
+
+/* The tenth directory entry is the way out: a full-width strip, not a stray tile. */
+@media (min-width: 1080px) {
+  .badge-root .badge-directory-exit {
+    grid-column: 1 / -1;
+  }
+}
+
+.badge-root .badge-banner-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  margin-top: auto;
+}
+
+.badge-root .badge-hands-table {
+  display: grid;
+  gap: clamp(18px, 2.4vw, 28px);
+}
+
+.badge-root .badge-hands-kiosk,
+.badge-root .badge-hands-side {
+  display: grid;
+  align-content: start;
+  gap: 16px;
+  min-width: 0;
+}
+
+.badge-root .badge-hands-screen {
+  position: relative;
+  overflow: hidden;
+  border: 10px solid #03070b;
+  border-radius: 10px;
+  background: #03070b;
+  box-shadow: 0 16px 28px rgba(2, 8, 20, 0.45);
+}
+
+.badge-root .badge-hands-tag {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: rgba(3, 7, 11, 0.82);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.badge-root .badge-hands-tag span {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--mist-2);
+}
+
+.badge-root .badge-hands-tag[data-live="true"] span {
+  background: var(--orange);
+}
+
+/* Mirrored like a selfie view: the video and the skeleton flip together. */
+.badge-root .badge-hands-lens {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: #081729;
+  transform: scaleX(-1);
+}
+
+.badge-root .badge-hands:not([data-status="idle"]) .badge-hands-lens {
+  aspect-ratio: auto;
+  min-height: 180px;
+}
+
+.badge-root .badge-hands-video {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.badge-root .badge-hands:not([data-status="idle"]) .badge-hands-video {
+  display: block;
+}
+
+.badge-root .badge-hands-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  --bone: #5fd3cb;
+  --bone-width: 4px;
+}
+
+.badge-root .badge-hands[data-status="loading"] .badge-hands-tag span {
+  background: var(--orange);
+  animation: badge-hands-wait 700ms ease-in-out infinite alternate;
+}
+
+@keyframes badge-hands-wait {
+  to {
+    opacity: 0.25;
+  }
+}
+
+.badge-root .badge-hands-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.badge-root .badge-hands-controls button:disabled {
+  opacity: 0.7;
+  cursor: progress;
+}
+
+.badge-root .badge-hands-error {
+  padding: 10px 14px;
+  border: 1.5px solid var(--orange);
+  border-radius: 6px;
+  color: var(--white);
+}
+
+.badge-root .badge-hands-poses {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.badge-root .badge-hands-poses button {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1.5px solid rgba(242, 244, 247, 0.28);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--white);
+  font-weight: 700;
+  transition:
+    background-color 160ms var(--ease-out),
+    border-color 160ms var(--ease-out);
+}
+
+.badge-root .badge-hands-poses button:hover {
+  border-color: var(--white);
+}
+
+.badge-root .badge-hands-poses button[aria-pressed="true"] {
+  border-color: var(--teal);
+  background: var(--teal-ink);
+}
+
+.badge-root .badge-hands-reading {
+  display: grid;
+  gap: 8px;
+}
+
+.badge-root .badge-hands-reading strong {
+  font-family: var(--badge-display), system-ui, sans-serif;
+  font-stretch: 78%;
+  font-weight: 900;
+  font-size: clamp(2.25rem, 1.8rem + 2vw, 3.25rem);
+  line-height: 1;
+}
+
+.badge-root .badge-hands-reading strong[data-named="false"] {
+  color: var(--mist);
+}
+
+.badge-root .badge-hands-reading ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin-top: 4px;
+  font-size: 0.9375rem;
+  color: var(--mist);
+}
+
+.badge-root .badge-hands-reading li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge-root .badge-hands-reading li > span:first-child {
+  width: 10px;
+  height: 10px;
+  border: 1.5px solid var(--mist-2);
+  border-radius: 50%;
+}
+
+.badge-root .badge-hands-reading li[data-on="true"] {
+  color: var(--white);
+}
+
+.badge-root .badge-hands-reading li[data-on="true"] > span:first-child {
+  border-color: var(--teal);
+  background: var(--teal);
+}
+
+.badge-root .badge-hands-card {
+  --focus: var(--navy);
+  display: grid;
+  gap: 14px;
+  padding: 18px clamp(16px, 2vw, 22px) 20px;
+  border-radius: 4px;
+  background: var(--white);
+  color: var(--navy);
+  transform: rotate(-0.6deg);
+  box-shadow: 0 14px 24px rgba(2, 8, 20, 0.4);
+}
+
+.badge-root .badge-hands-card h3 {
+  font-family: var(--badge-display), system-ui, sans-serif;
+  font-stretch: 78%;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 1.05;
+}
+
+.badge-root .badge-hands-card > ul {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.badge-root .badge-hands-card > ul > li {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.badge-root .badge-hands-stamp {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  max-width: 76px;
+  aspect-ratio: 1;
+  border: 2px dashed var(--mist-2);
+  border-radius: 50%;
+}
+
+/* A stamped gesture is flat ink: the pose knocked out of a teal disc, each struck at its own angle. */
+.badge-root .badge-hands-card li[data-stamped="true"] .badge-hands-stamp {
+  border-color: var(--teal-ink);
+  border-style: solid;
+  background: var(--teal-ink);
+  transform: rotate(var(--strike, -6deg));
+  animation: badge-hands-press 320ms var(--ease-out);
+}
+
+.badge-root .badge-hands-card li:nth-child(2) {
+  --strike: 5deg;
+}
+
+.badge-root .badge-hands-card li:nth-child(3) {
+  --strike: -3deg;
+}
+
+.badge-root .badge-hands-card li:nth-child(4) {
+  --strike: 8deg;
+}
+
+@keyframes badge-hands-press {
+  from {
+    transform: scale(1.5) rotate(-14deg);
+    opacity: 0;
+  }
+}
+
+.badge-root .badge-hands-stamp-art {
+  position: absolute;
+  inset: 18%;
+  width: 64%;
+  height: 64%;
+  --bone: var(--ink-2);
+  --joint: var(--ink-2);
+  --bone-width: 2.25px;
+}
+
+.badge-root .badge-hands-card li[data-stamped="true"] .badge-hands-stamp-art {
+  --bone: var(--white);
+  --joint: var(--white);
+}
+
+.badge-root .badge-hands-mail {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  text-decoration-color: var(--orange-ink);
+  text-decoration-line: underline;
+  transition: color 160ms var(--ease-out);
+}
+
+.badge-root .badge-hands-mail:hover {
+  color: var(--orange-ink);
+}
+
+.badge-root .badge-hands-done {
+  display: grid;
+  gap: 8px;
+}
+
+.badge-root .badge-hands-detail {
+  min-width: 0;
+}
+
+.badge-root .badge-hands-detail .badge-log {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.badge-root .badge-hands-detail .badge-points li {
+  color: var(--mist);
+}
+
+.badge-root .badge-hands-detail .badge-points li::before {
+  background: var(--orange);
+}
+
+@media (min-width: 980px) {
+  .badge-root .badge-hands-table {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  }
+
+  .badge-root .badge-hands-detail {
+    grid-column: 1 / -1;
+  }
+
+  /* Reading at the top of the table, the card at its lower edge, level with the controls. */
+  .badge-root .badge-hands-side {
+    align-content: space-between;
+  }
+
+  .badge-root .badge-hands-poses {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

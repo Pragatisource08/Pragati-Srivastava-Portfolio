@@ -1,681 +1,844 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-30T18:13:44.714Z",
-  "title": "Design System: Pragati Srivastava — The Practical File",
+  "generatedAt": "2026-11-07T05:07:34.712Z",
+  "title": "Design System: Pragati Srivastava — The Hackathon Badge",
   "extensions": {
     "colorMeta": {
-      "kraft": {
+      "navy": {
         "role": "neutral",
-        "displayName": "Kraft Cover",
-        "purpose": "File cover and page ground, top bar, punch holes, browser canvas.",
+        "displayName": "Hall Navy",
+        "purpose": "Page ground, canvas, text on orange, teal and white, ink button.",
         "tonalRamp": [
-          "oklch(15% 0.045 65)",
-          "oklch(25% 0.063 65)",
-          "oklch(35% 0.081 65)",
-          "oklch(45% 0.090 65)",
-          "oklch(55% 0.090 65)",
-          "oklch(65% 0.081 65)",
-          "oklch(80% 0.054 65)",
-          "oklch(95% 0.022 65)"
+          "oklch(15% 0.029 257)",
+          "oklch(25% 0.041 257)",
+          "oklch(35% 0.052 257)",
+          "oklch(45% 0.058 257)",
+          "oklch(55% 0.058 257)",
+          "oklch(65% 0.052 257)",
+          "oklch(80% 0.035 257)",
+          "oklch(95% 0.015 257)"
         ]
       },
-      "kraft-deep": {
+      "navy-2": {
         "role": "neutral",
-        "displayName": "Kraft Deep",
-        "purpose": "Scrollbar thumb on the kraft track.",
+        "displayName": "Tabletop Navy",
+        "purpose": "Booth tabletops and the help desk band.",
         "tonalRamp": [
-          "oklch(15% 0.040 62)",
-          "oklch(25% 0.056 62)",
-          "oklch(35% 0.072 62)",
-          "oklch(45% 0.080 62)",
-          "oklch(55% 0.080 62)",
-          "oklch(65% 0.072 62)",
-          "oklch(80% 0.048 62)",
-          "oklch(95% 0.020 62)"
+          "oklch(15% 0.035 256)",
+          "oklch(25% 0.049 256)",
+          "oklch(35% 0.063 256)",
+          "oklch(45% 0.070 256)",
+          "oklch(55% 0.070 256)",
+          "oklch(65% 0.063 256)",
+          "oklch(80% 0.042 256)",
+          "oklch(95% 0.018 256)"
         ]
       },
-      "kraft-ink": {
+      "navy-3": {
         "role": "neutral",
-        "displayName": "Kraft Ink",
-        "purpose": "Text printed directly on kraft.",
+        "displayName": "Skirt Navy",
+        "purpose": "Desk skirt, navy banner head, ink button hover.",
         "tonalRamp": [
-          "oklch(15% 0.010 60)",
-          "oklch(25% 0.014 60)",
-          "oklch(35% 0.018 60)",
-          "oklch(45% 0.020 60)",
-          "oklch(55% 0.020 60)",
-          "oklch(65% 0.018 60)",
-          "oklch(80% 0.012 60)",
-          "oklch(95% 0.005 60)"
+          "oklch(15% 0.042 257)",
+          "oklch(25% 0.059 257)",
+          "oklch(35% 0.076 257)",
+          "oklch(45% 0.084 257)",
+          "oklch(55% 0.084 257)",
+          "oklch(65% 0.076 257)",
+          "oklch(80% 0.051 257)",
+          "oklch(95% 0.021 257)"
         ]
       },
-      "paper": {
+      "table-lip": {
         "role": "neutral",
-        "displayName": "Sheet White",
-        "purpose": "Every sheet, chip, paper button and icon link.",
+        "displayName": "Table Lip",
+        "purpose": "Front edge of a booth table and the clipboard board.",
         "tonalRamp": [
-          "oklch(15% 0.003 110)",
-          "oklch(25% 0.004 110)",
-          "oklch(35% 0.005 110)",
-          "oklch(45% 0.006 110)",
-          "oklch(55% 0.006 110)",
-          "oklch(65% 0.005 110)",
-          "oklch(80% 0.004 110)",
-          "oklch(95% 0.002 110)"
+          "oklch(15% 0.039 256)",
+          "oklch(25% 0.054 256)",
+          "oklch(35% 0.070 256)",
+          "oklch(45% 0.078 256)",
+          "oklch(55% 0.078 256)",
+          "oklch(65% 0.070 256)",
+          "oklch(80% 0.047 256)",
+          "oklch(95% 0.019 256)"
         ]
       },
-      "rule-blue": {
+      "line": {
         "role": "neutral",
-        "displayName": "Rule Blue",
-        "purpose": "Ruled lines and dividers.",
+        "displayName": "Floor Hairline",
+        "purpose": "Hairlines on navy; canonical value is rgba(242, 244, 247, 0.14).",
         "tonalRamp": [
-          "oklch(15% 0.030 245)",
-          "oklch(25% 0.042 245)",
-          "oklch(35% 0.054 245)",
-          "oklch(45% 0.060 245)",
-          "oklch(55% 0.060 245)",
-          "oklch(65% 0.054 245)",
-          "oklch(80% 0.036 245)",
-          "oklch(95% 0.015 245)"
+          "oklch(15% 0.002 258)",
+          "oklch(25% 0.003 258)",
+          "oklch(35% 0.004 258)",
+          "oklch(45% 0.005 258)",
+          "oklch(55% 0.005 258)",
+          "oklch(65% 0.004 258)",
+          "oklch(80% 0.003 258)",
+          "oklch(95% 0.001 258)"
+        ],
+        "canonical": "rgba(242, 244, 247, 0.14)"
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Badge White",
+        "purpose": "Every printed surface and primary text on navy.",
+        "tonalRamp": [
+          "oklch(15% 0.002 258)",
+          "oklch(25% 0.003 258)",
+          "oklch(35% 0.004 258)",
+          "oklch(45% 0.005 258)",
+          "oklch(55% 0.005 258)",
+          "oklch(65% 0.004 258)",
+          "oklch(80% 0.003 258)",
+          "oklch(95% 0.001 258)"
         ]
       },
-      "margin-red": {
+      "paper-2": {
+        "role": "neutral",
+        "displayName": "Paper 2",
+        "purpose": "Fold band on the desk tent.",
+        "tonalRamp": [
+          "oklch(15% 0.005 257)",
+          "oklch(25% 0.008 257)",
+          "oklch(35% 0.010 257)",
+          "oklch(45% 0.011 257)",
+          "oklch(55% 0.011 257)",
+          "oklch(65% 0.010 257)",
+          "oklch(80% 0.007 257)",
+          "oklch(95% 0.003 257)"
+        ]
+      },
+      "orange": {
         "role": "primary",
-        "displayName": "Margin Red",
-        "purpose": "Printed margin line and the examiner's pen strokes.",
+        "displayName": "Lanyard Orange",
+        "purpose": "Primary button, ribbon, access strip, sign tiles, banner heads, stubs, skeleton joints.",
         "tonalRamp": [
-          "oklch(15% 0.095 28)",
-          "oklch(25% 0.133 28)",
-          "oklch(35% 0.171 28)",
-          "oklch(45% 0.190 28)",
-          "oklch(55% 0.190 28)",
-          "oklch(65% 0.171 28)",
-          "oklch(80% 0.114 28)",
-          "oklch(95% 0.048 28)"
+          "oklch(15% 0.100 44)",
+          "oklch(25% 0.140 44)",
+          "oklch(35% 0.180 44)",
+          "oklch(45% 0.200 44)",
+          "oklch(55% 0.200 44)",
+          "oklch(65% 0.180 44)",
+          "oklch(80% 0.120 44)",
+          "oklch(95% 0.050 44)"
         ]
       },
-      "examiner-red": {
+      "orange-hi": {
         "role": "primary",
-        "displayName": "Examiner Red",
-        "purpose": "Red stamp button, mail button, wordmark period, crash lines, focus ring.",
+        "displayName": "Orange Hi",
+        "purpose": "Primary button hover.",
         "tonalRamp": [
-          "oklch(15% 0.090 28)",
-          "oklch(25% 0.126 28)",
-          "oklch(35% 0.162 28)",
-          "oklch(45% 0.180 28)",
-          "oklch(55% 0.180 28)",
-          "oklch(65% 0.162 28)",
-          "oklch(80% 0.108 28)",
-          "oklch(95% 0.045 28)"
+          "oklch(15% 0.086 46)",
+          "oklch(25% 0.120 46)",
+          "oklch(35% 0.154 46)",
+          "oklch(45% 0.171 46)",
+          "oklch(55% 0.171 46)",
+          "oklch(65% 0.154 46)",
+          "oklch(80% 0.103 46)",
+          "oklch(95% 0.043 46)"
         ]
       },
-      "examiner-red-press": {
+      "orange-ink": {
         "role": "primary",
-        "displayName": "Examiner Red Press",
-        "purpose": "Hover state of red controls.",
+        "displayName": "Orange Ink",
+        "purpose": "Orange for type and marks on white: link underlines, verdict stamps, hover text.",
         "tonalRamp": [
-          "oklch(15% 0.085 28)",
-          "oklch(25% 0.119 28)",
-          "oklch(35% 0.153 28)",
-          "oklch(45% 0.170 28)",
-          "oklch(55% 0.170 28)",
-          "oklch(65% 0.153 28)",
-          "oklch(80% 0.102 28)",
-          "oklch(95% 0.043 28)"
+          "oklch(15% 0.078 43)",
+          "oklch(25% 0.109 43)",
+          "oklch(35% 0.140 43)",
+          "oklch(45% 0.155 43)",
+          "oklch(55% 0.155 43)",
+          "oklch(65% 0.140 43)",
+          "oklch(80% 0.093 43)",
+          "oklch(95% 0.039 43)"
         ]
       },
-      "remark-red": {
+      "ribbon-edge": {
         "role": "primary",
-        "displayName": "Remark Red",
-        "purpose": "Handwritten examiner remarks set as text.",
+        "displayName": "Ribbon Edge",
+        "purpose": "Selvedge of the woven ribbon.",
         "tonalRamp": [
-          "oklch(15% 0.080 28)",
-          "oklch(25% 0.112 28)",
-          "oklch(35% 0.144 28)",
-          "oklch(45% 0.160 28)",
-          "oklch(55% 0.160 28)",
-          "oklch(65% 0.144 28)",
-          "oklch(80% 0.096 28)",
-          "oklch(95% 0.040 28)"
+          "oklch(15% 0.085 43)",
+          "oklch(25% 0.119 43)",
+          "oklch(35% 0.153 43)",
+          "oklch(45% 0.170 43)",
+          "oklch(55% 0.170 43)",
+          "oklch(65% 0.153 43)",
+          "oklch(80% 0.102 43)",
+          "oklch(95% 0.042 43)"
         ]
       },
-      "ballpoint-blue": {
+      "teal": {
         "role": "secondary",
-        "displayName": "Ballpoint Blue",
-        "purpose": "Her handwriting and every interactive affordance.",
+        "displayName": "Event Teal",
+        "purpose": "Alternate zone colour and on states.",
         "tonalRamp": [
-          "oklch(15% 0.075 265)",
-          "oklch(25% 0.105 265)",
-          "oklch(35% 0.135 265)",
-          "oklch(45% 0.150 265)",
-          "oklch(55% 0.150 265)",
-          "oklch(65% 0.135 265)",
-          "oklch(80% 0.090 265)",
-          "oklch(95% 0.037 265)"
+          "oklch(15% 0.054 189)",
+          "oklch(25% 0.075 189)",
+          "oklch(35% 0.097 189)",
+          "oklch(45% 0.107 189)",
+          "oklch(55% 0.107 189)",
+          "oklch(65% 0.097 189)",
+          "oklch(80% 0.064 189)",
+          "oklch(95% 0.027 189)"
         ]
       },
-      "ballpoint-blue-press": {
+      "teal-ink": {
         "role": "secondary",
-        "displayName": "Ballpoint Blue Press",
-        "purpose": "Hover state of ink buttons.",
+        "displayName": "Teal Ink",
+        "purpose": "Teal for type and marks on white; selected pose fill; the disc of a struck stamp.",
         "tonalRamp": [
-          "oklch(15% 0.070 265)",
-          "oklch(25% 0.098 265)",
-          "oklch(35% 0.126 265)",
-          "oklch(45% 0.140 265)",
-          "oklch(55% 0.140 265)",
-          "oklch(65% 0.126 265)",
-          "oklch(80% 0.084 265)",
-          "oklch(95% 0.035 265)"
+          "oklch(15% 0.040 189)",
+          "oklch(25% 0.056 189)",
+          "oklch(35% 0.072 189)",
+          "oklch(45% 0.079 189)",
+          "oklch(55% 0.079 189)",
+          "oklch(65% 0.072 189)",
+          "oklch(80% 0.048 189)",
+          "oklch(95% 0.020 189)"
         ]
       },
-      "ink-wash": {
+      "signal-teal": {
         "role": "secondary",
-        "displayName": "Ink Wash",
-        "purpose": "Hover fill of paper controls; correct answer fill.",
+        "displayName": "Signal Teal",
+        "purpose": "Teal for light-emitting surfaces: LEDs, bound log lines, kiosk skeleton bones.",
         "tonalRamp": [
-          "oklch(15% 0.025 265)",
-          "oklch(25% 0.035 265)",
-          "oklch(35% 0.045 265)",
-          "oklch(45% 0.050 265)",
-          "oklch(55% 0.050 265)",
-          "oklch(65% 0.045 265)",
-          "oklch(80% 0.030 265)",
-          "oklch(95% 0.013 265)"
+          "oklch(15% 0.053 189)",
+          "oklch(25% 0.074 189)",
+          "oklch(35% 0.095 189)",
+          "oklch(45% 0.106 189)",
+          "oklch(55% 0.106 189)",
+          "oklch(65% 0.095 189)",
+          "oklch(80% 0.063 189)",
+          "oklch(95% 0.026 189)"
         ]
       },
-      "stamp-violet": {
+      "mist": {
+        "role": "neutral",
+        "displayName": "Mist",
+        "purpose": "Secondary text on navy.",
+        "tonalRamp": [
+          "oklch(15% 0.017 256)",
+          "oklch(25% 0.023 256)",
+          "oklch(35% 0.030 256)",
+          "oklch(45% 0.033 256)",
+          "oklch(55% 0.033 256)",
+          "oklch(65% 0.030 256)",
+          "oklch(80% 0.020 256)",
+          "oklch(95% 0.008 256)"
+        ]
+      },
+      "mist-2": {
+        "role": "neutral",
+        "displayName": "Mist 2",
+        "purpose": "Quiet marks, empty rings, colophon.",
+        "tonalRamp": [
+          "oklch(15% 0.023 255)",
+          "oklch(25% 0.032 255)",
+          "oklch(35% 0.041 255)",
+          "oklch(45% 0.045 255)",
+          "oklch(55% 0.045 255)",
+          "oklch(65% 0.041 255)",
+          "oklch(80% 0.027 255)",
+          "oklch(95% 0.011 255)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "purpose": "Secondary text on printed surfaces.",
+        "tonalRamp": [
+          "oklch(15% 0.026 257)",
+          "oklch(25% 0.036 257)",
+          "oklch(35% 0.046 257)",
+          "oklch(45% 0.051 257)",
+          "oklch(55% 0.051 257)",
+          "oklch(65% 0.046 257)",
+          "oklch(80% 0.031 257)",
+          "oklch(95% 0.013 257)"
+        ]
+      },
+      "sky": {
         "role": "tertiary",
-        "displayName": "Stamp Violet",
-        "purpose": "Rubber-stamp status only.",
+        "displayName": "Sticker Sky",
+        "purpose": "Sticker stock only.",
         "tonalRamp": [
-          "oklch(15% 0.065 295)",
-          "oklch(25% 0.091 295)",
-          "oklch(35% 0.117 295)",
-          "oklch(45% 0.130 295)",
-          "oklch(55% 0.130 295)",
-          "oklch(65% 0.117 295)",
-          "oklch(80% 0.078 295)",
-          "oklch(95% 0.033 295)"
+          "oklch(15% 0.016 245)",
+          "oklch(25% 0.023 245)",
+          "oklch(35% 0.029 245)",
+          "oklch(45% 0.033 245)",
+          "oklch(55% 0.033 245)",
+          "oklch(65% 0.029 245)",
+          "oklch(80% 0.020 245)",
+          "oklch(95% 0.008 245)"
         ]
       },
-      "violet-wash": {
+      "sand": {
         "role": "tertiary",
-        "displayName": "Violet Wash",
-        "purpose": "Fill of a port held by another process.",
+        "displayName": "Sticker Sand",
+        "purpose": "Sticker stock only.",
         "tonalRamp": [
-          "oklch(15% 0.025 300)",
-          "oklch(25% 0.035 300)",
-          "oklch(35% 0.045 300)",
-          "oklch(45% 0.050 300)",
-          "oklch(55% 0.050 300)",
-          "oklch(65% 0.045 300)",
-          "oklch(80% 0.030 300)",
-          "oklch(95% 0.013 300)"
+          "oklch(15% 0.027 56)",
+          "oklch(25% 0.038 56)",
+          "oklch(35% 0.049 56)",
+          "oklch(45% 0.055 56)",
+          "oklch(55% 0.055 56)",
+          "oklch(65% 0.049 56)",
+          "oklch(80% 0.033 56)",
+          "oklch(95% 0.014 56)"
         ]
       },
-      "graph-minor": {
+      "kiosk-black": {
         "role": "neutral",
-        "displayName": "Graph Green Minor",
-        "purpose": "8px graph paper grid.",
+        "displayName": "Kiosk Black",
+        "purpose": "Screen bezel, event log, port jacks.",
         "tonalRamp": [
-          "oklch(15% 0.015 150)",
-          "oklch(25% 0.021 150)",
-          "oklch(35% 0.027 150)",
-          "oklch(45% 0.030 150)",
-          "oklch(55% 0.030 150)",
-          "oklch(65% 0.027 150)",
-          "oklch(80% 0.018 150)",
-          "oklch(95% 0.007 150)"
+          "oklch(15% 0.007 240)",
+          "oklch(25% 0.010 240)",
+          "oklch(35% 0.013 240)",
+          "oklch(45% 0.014 240)",
+          "oklch(55% 0.014 240)",
+          "oklch(65% 0.013 240)",
+          "oklch(80% 0.008 240)",
+          "oklch(95% 0.004 240)"
         ]
       },
-      "graph-major": {
+      "rack-black": {
         "role": "neutral",
-        "displayName": "Graph Green Major",
-        "purpose": "40px graph paper grid.",
+        "displayName": "Rack Black",
+        "purpose": "Network switch port ground.",
         "tonalRamp": [
-          "oklch(15% 0.020 150)",
-          "oklch(25% 0.028 150)",
-          "oklch(35% 0.036 150)",
-          "oklch(45% 0.040 150)",
-          "oklch(55% 0.040 150)",
-          "oklch(65% 0.036 150)",
-          "oklch(80% 0.024 150)",
-          "oklch(95% 0.010 150)"
+          "oklch(15% 0.010 252)",
+          "oklch(25% 0.014 252)",
+          "oklch(35% 0.018 252)",
+          "oklch(45% 0.019 252)",
+          "oklch(55% 0.019 252)",
+          "oklch(65% 0.018 252)",
+          "oklch(80% 0.012 252)",
+          "oklch(95% 0.005 252)"
         ]
       },
-      "graph-paper": {
+      "rack-line": {
         "role": "neutral",
-        "displayName": "Graph Paper",
-        "purpose": "Graph paper ground (NASA record and certificate).",
+        "displayName": "Rack Line",
+        "purpose": "Network switch port border and unlit LED.",
         "tonalRamp": [
-          "oklch(15% 0.005 150)",
-          "oklch(25% 0.007 150)",
-          "oklch(35% 0.009 150)",
-          "oklch(45% 0.010 150)",
-          "oklch(55% 0.010 150)",
-          "oklch(65% 0.009 150)",
-          "oklch(80% 0.006 150)",
-          "oklch(95% 0.003 150)"
+          "oklch(15% 0.016 252)",
+          "oklch(25% 0.022 252)",
+          "oklch(35% 0.028 252)",
+          "oklch(45% 0.032 252)",
+          "oklch(55% 0.032 252)",
+          "oklch(65% 0.028 252)",
+          "oklch(80% 0.019 252)",
+          "oklch(95% 0.008 252)"
         ]
       },
-      "print": {
+      "log-text": {
         "role": "neutral",
-        "displayName": "Print Black",
-        "purpose": "Body text and printed headings.",
+        "displayName": "Log Text",
+        "purpose": "Event log info lines.",
         "tonalRamp": [
-          "oklch(15% 0.003 85)",
-          "oklch(25% 0.004 85)",
-          "oklch(35% 0.005 85)",
-          "oklch(45% 0.006 85)",
-          "oklch(55% 0.006 85)",
-          "oklch(65% 0.005 85)",
-          "oklch(80% 0.004 85)",
-          "oklch(95% 0.002 85)"
+          "oklch(15% 0.008 251)",
+          "oklch(25% 0.012 251)",
+          "oklch(35% 0.015 251)",
+          "oklch(45% 0.017 251)",
+          "oklch(55% 0.017 251)",
+          "oklch(65% 0.015 251)",
+          "oklch(80% 0.010 251)",
+          "oklch(95% 0.004 251)"
         ]
       },
-      "print-soft": {
-        "role": "neutral",
-        "displayName": "Print Soft",
-        "purpose": "Field labels, notes, disclaimers.",
+      "log-crash": {
+        "role": "primary",
+        "displayName": "Log Crash",
+        "purpose": "Event log crash lines.",
         "tonalRamp": [
-          "oklch(15% 0.005 80)",
-          "oklch(25% 0.007 80)",
-          "oklch(35% 0.009 80)",
-          "oklch(45% 0.010 80)",
-          "oklch(55% 0.010 80)",
-          "oklch(65% 0.009 80)",
-          "oklch(80% 0.006 80)",
-          "oklch(95% 0.003 80)"
+          "oklch(15% 0.072 51)",
+          "oklch(25% 0.101 51)",
+          "oklch(35% 0.129 51)",
+          "oklch(45% 0.144 51)",
+          "oklch(55% 0.144 51)",
+          "oklch(65% 0.129 51)",
+          "oklch(80% 0.086 51)",
+          "oklch(95% 0.036 51)"
         ]
       },
-      "outline-brown": {
-        "role": "neutral",
-        "displayName": "Outline Brown",
-        "purpose": "1.5px outline of every object; frames; table head rules.",
+      "right-wash": {
+        "role": "tertiary",
+        "displayName": "Right Wash",
+        "purpose": "Correct scorecard option.",
         "tonalRamp": [
-          "oklch(15% 0.010 60)",
-          "oklch(25% 0.014 60)",
-          "oklch(35% 0.018 60)",
-          "oklch(45% 0.020 60)",
-          "oklch(55% 0.020 60)",
-          "oklch(65% 0.018 60)",
-          "oklch(80% 0.012 60)",
-          "oklch(95% 0.005 60)"
+          "oklch(15% 0.014 191)",
+          "oklch(25% 0.020 191)",
+          "oklch(35% 0.026 191)",
+          "oklch(45% 0.028 191)",
+          "oklch(55% 0.028 191)",
+          "oklch(65% 0.026 191)",
+          "oklch(80% 0.017 191)",
+          "oklch(95% 0.007 191)"
         ]
       },
-      "highlighter": {
-        "role": "neutral",
-        "displayName": "Highlighter Yellow",
-        "purpose": "Text selection and Index hover sweep.",
+      "wrong-wash": {
+        "role": "tertiary",
+        "displayName": "Wrong Wash",
+        "purpose": "Wrong scorecard option.",
         "tonalRamp": [
-          "oklch(15% 0.080 98)",
-          "oklch(25% 0.112 98)",
-          "oklch(35% 0.144 98)",
-          "oklch(45% 0.160 98)",
-          "oklch(55% 0.160 98)",
-          "oklch(65% 0.144 98)",
-          "oklch(80% 0.096 98)",
-          "oklch(95% 0.040 98)"
+          "oklch(15% 0.019 52)",
+          "oklch(25% 0.026 52)",
+          "oklch(35% 0.034 52)",
+          "oklch(45% 0.038 52)",
+          "oklch(55% 0.038 52)",
+          "oklch(65% 0.034 52)",
+          "oklch(80% 0.023 52)",
+          "oklch(95% 0.009 52)"
         ]
       },
-      "tape": {
+      "shadow-ink": {
         "role": "neutral",
-        "displayName": "Tape",
-        "purpose": "Photo tape, at 72% opacity with a faint brown edge.",
+        "displayName": "Shadow Ink",
+        "purpose": "Every cast shadow, as rgba at 0.25 to 0.5 alpha.",
         "tonalRamp": [
-          "oklch(15% 0.040 100)",
-          "oklch(25% 0.056 100)",
-          "oklch(35% 0.072 100)",
-          "oklch(45% 0.080 100)",
-          "oklch(55% 0.080 100)",
-          "oklch(65% 0.072 100)",
-          "oklch(80% 0.048 100)",
-          "oklch(95% 0.020 100)"
-        ]
-      },
-      "chit": {
-        "role": "neutral",
-        "displayName": "Chit",
-        "purpose": "The small LeetCode chit.",
-        "tonalRamp": [
-          "oklch(15% 0.015 95)",
-          "oklch(25% 0.021 95)",
-          "oklch(35% 0.027 95)",
-          "oklch(45% 0.030 95)",
-          "oklch(55% 0.030 95)",
-          "oklch(65% 0.027 95)",
-          "oklch(80% 0.018 95)",
-          "oklch(95% 0.007 95)"
-        ]
-      },
-      "disabled-paper": {
-        "role": "neutral",
-        "displayName": "Disabled Paper",
-        "purpose": "Disabled red stamp button.",
-        "tonalRamp": [
-          "oklch(15% 0.005 80)",
-          "oklch(25% 0.007 80)",
-          "oklch(35% 0.009 80)",
-          "oklch(45% 0.010 80)",
-          "oklch(55% 0.010 80)",
-          "oklch(65% 0.009 80)",
-          "oklch(80% 0.006 80)",
-          "oklch(95% 0.003 80)"
+          "oklch(15% 0.015 255)",
+          "oklch(25% 0.021 255)",
+          "oklch(35% 0.028 255)",
+          "oklch(45% 0.031 255)",
+          "oklch(55% 0.031 255)",
+          "oklch(65% 0.028 255)",
+          "oklch(80% 0.018 255)",
+          "oklch(95% 0.008 255)"
         ]
       }
     },
     "typographyMeta": {
       "display": {
-        "displayName": "Printed Display",
-        "purpose": "PRACTICAL FILE and INDEX only. Uppercase, Archivo width 68%."
+        "displayName": "Hook",
+        "purpose": "The hero hook only."
       },
-      "headline": {
-        "displayName": "Printed Headline",
-        "purpose": "Record and Annexure titles, max 20ch. Uppercase."
+      "display-exit": {
+        "displayName": "Exit Question",
+        "purpose": "The help desk question."
+      },
+      "badge-name": {
+        "displayName": "Badge Name",
+        "purpose": "PRAGATI on the badge. Uppercase; scaled by the card unit (0.72 below 900px)."
+      },
+      "banner-title": {
+        "displayName": "Banner Title",
+        "purpose": "Project names on roll-up banners; clamp(2.1rem, 2.85vw, 2.6rem) from 1240px."
+      },
+      "sign": {
+        "displayName": "Venue Sign",
+        "purpose": "Zone names on hanging signs."
+      },
+      "reading": {
+        "displayName": "Kiosk Reading",
+        "purpose": "The recognised gesture on the Hands-on booth."
       },
       "title": {
-        "displayName": "Printed Title",
-        "purpose": "Practical frame titles, certificate titles, sub-sheets. Uppercase; 1.6rem below sm."
+        "displayName": "Sheet Title",
+        "purpose": "Titles on printed sheets."
       },
-      "body": {
-        "displayName": "Body",
-        "purpose": "Record text; line-height equals the rule gap; max 68ch."
-      },
-      "label": {
-        "displayName": "Form Label",
-        "purpose": "Printed field labels (Name, Aim, Result, Date, Sign). Uppercase, print-soft."
-      },
-      "hand": {
-        "displayName": "Ballpoint Hand",
-        "purpose": "Her handwritten entries: Index, values, dates, step numbers. Ballpoint blue."
-      },
-      "hand-name": {
-        "displayName": "Ballpoint Name",
-        "purpose": "Her name on the front-page label; writes itself on once."
-      },
-      "stamp": {
-        "displayName": "Stamp",
-        "purpose": "Violet status stamps, 0.85–1.7rem. Uppercase."
-      },
-      "button-stamp": {
-        "displayName": "Red Stamp Label",
-        "purpose": "The email call to action. Uppercase."
+      "title-small": {
+        "displayName": "Ticket Title",
+        "purpose": "Ticket titles."
       },
       "button": {
         "displayName": "Button",
-        "purpose": "Paper and ink buttons."
+        "purpose": "All buttons; 1.2rem in the large size."
       },
-      "code": {
-        "displayName": "Terminal",
-        "purpose": "Ports, printouts, code fragments only."
+      "stamp": {
+        "displayName": "Stamp",
+        "purpose": "Verdict stamps. Uppercase."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default text."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Zone intros, max 60ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Meters, form fields, small captions. Sentence case."
+      },
+      "data": {
+        "displayName": "System Data",
+        "purpose": "PR and port numbers, owners, log lines, handle, registration values. 0.6875 to 1.0625rem."
       }
     },
-    "shadows": [],
+    "shadows": [
+      {
+        "name": "hanging-card",
+        "value": "0 2px 3px rgba(2, 8, 20, 0.35), 0 22px 40px rgba(2, 8, 20, 0.5)",
+        "purpose": "The badge."
+      },
+      {
+        "name": "hanging-print",
+        "value": "0 2px 3px rgba(2, 8, 20, 0.3), 0 16px 30px rgba(2, 8, 20, 0.4)",
+        "purpose": "Zone signs."
+      },
+      {
+        "name": "banner",
+        "value": "0 2px 3px rgba(2, 8, 20, 0.3), 0 24px 40px rgba(2, 8, 20, 0.4)",
+        "purpose": "Roll-up banners."
+      },
+      {
+        "name": "table",
+        "value": "0 22px 40px rgba(2, 8, 20, 0.45)",
+        "purpose": "Booth tables and the clipboard."
+      },
+      {
+        "name": "kiosk",
+        "value": "0 16px 28px rgba(2, 8, 20, 0.45)",
+        "purpose": "Kiosk screen on the table."
+      },
+      {
+        "name": "paper",
+        "value": "0 14px 24px rgba(2, 8, 20, 0.4)",
+        "purpose": "Stamp card; sheets, tents and forms use 10-18px offsets."
+      },
+      {
+        "name": "button",
+        "value": "0 8px 18px rgba(2, 8, 20, 0.35)",
+        "purpose": "Primary button at rest."
+      },
+      {
+        "name": "button-hover",
+        "value": "0 12px 22px rgba(2, 8, 20, 0.4)",
+        "purpose": "Primary button hover."
+      },
+      {
+        "name": "button-active",
+        "value": "0 4px 10px rgba(2, 8, 20, 0.35)",
+        "purpose": "Primary button press."
+      },
+      {
+        "name": "cutout",
+        "value": "drop-shadow(0 14px 18px rgba(2, 8, 20, 0.45))",
+        "purpose": "Masked tickets; wristbands use 0 10px 12px."
+      }
+    ],
     "motion": [
       {
-        "name": "ease-place",
+        "name": "ease-out",
         "value": "cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "Placed: sheets slide up 18–28px and settle rotation over 0.8–0.95s; also collapse, end cards, meters."
+        "purpose": "Default easing, the --ease-out token."
       },
       {
-        "name": "ease-pen",
-        "value": "cubic-bezier(0.65, 0, 0.35, 1)",
-        "purpose": "Written: ink strokes draw by path length. Tick 0.45s, cross 0.4s, signature 1.4s."
+        "name": "control",
+        "value": "150-220ms",
+        "purpose": "Hover and press on controls."
       },
       {
-        "name": "ease-write-on",
-        "value": "cubic-bezier(0.45, 0, 0.25, 1)",
-        "purpose": "Name clip reveal, 1.1s, 0.45s delay, once on load."
+        "name": "badge-flip",
+        "value": "820ms ease-out",
+        "purpose": "Badge rotateY flip."
       },
       {
-        "name": "spring-stamp",
-        "value": "spring(stiffness 520, damping 22–24)",
-        "purpose": "Pressed: stamps and the red stamp button land from a larger scale and steeper angle."
+        "name": "lanyard-physics",
+        "value": "verlet: gravity 2400px/s², step 1/120, 14 iterations, damping 0.993, 12 segments",
+        "purpose": "Ribbon and card swing."
       },
       {
-        "name": "spring-switch",
-        "value": "spring(stiffness 500, damping 38)",
-        "purpose": "Fair copy / Rough work active segment slides."
+        "name": "sign-sway",
+        "value": "scroll-driven, -5deg to 2.6deg to -1deg to 0, entry 10% to cover 35%",
+        "purpose": "Zone sign settles on view, where animation-timeline is supported."
       },
       {
-        "name": "duration-control",
-        "value": "140–160ms",
-        "purpose": "Hover and press transitions on buttons and links."
+        "name": "stamp-press",
+        "value": "320ms ease-out from scale 1.5, -14deg, to strike angle -6, 5, -3 or 8deg",
+        "purpose": "Stamp card slot."
       },
       {
-        "name": "duration-highlight",
-        "value": "300ms ease-out",
-        "purpose": "Highlighter sweep behind an Index entry."
+        "name": "verdict-press",
+        "value": "380ms ease-out from scale 1.5",
+        "purpose": "Judging verdict stamp."
+      },
+      {
+        "name": "end-reveal",
+        "value": "420ms ease-out, top-down clip",
+        "purpose": "Demo booth end panel."
+      },
+      {
+        "name": "port-flash",
+        "value": "600ms ease-out",
+        "purpose": "Teal or orange flash on a port result."
+      },
+      {
+        "name": "loading-pulse",
+        "value": "700ms ease-in-out alternate to 0.25 opacity",
+        "purpose": "Kiosk tag dot while the model loads."
       },
       {
         "name": "reduced-motion",
-        "value": "MotionConfig reducedMotion=\"user\" + global CSS duration clamp",
-        "purpose": "All motion respects prefers-reduced-motion."
+        "value": "global duration clamp to 0.01ms; physics off; flip is an instant swap",
+        "purpose": "Respects prefers-reduced-motion."
       }
     ],
     "breakpoints": [
       {
-        "name": "sm",
+        "name": "pass-hint",
+        "value": "560px"
+      },
+      {
+        "name": "forms",
         "value": "640px"
       },
       {
-        "name": "md",
-        "value": "768px"
+        "name": "directory-2",
+        "value": "720px"
       },
       {
-        "name": "lg",
-        "value": "1024px"
+        "name": "switch-10",
+        "value": "760px"
+      },
+      {
+        "name": "tickets-desk",
+        "value": "820px"
+      },
+      {
+        "name": "hero",
+        "value": "900px"
+      },
+      {
+        "name": "hands-table",
+        "value": "980px"
+      },
+      {
+        "name": "directory-3",
+        "value": "1080px"
+      },
+      {
+        "name": "expo-4",
+        "value": "1240px"
       }
     ],
     "browserSurfaces": [
       {
         "name": "canvas",
-        "value": "#b07a45 (html:has(.pf-root))",
-        "purpose": "Overscroll and canvas match the kraft cover."
+        "value": "#0b1f3a (html:has(.badge-root)), color-scheme: dark",
+        "purpose": "Canvas and overscroll match the hall."
       },
       {
         "name": "scrollbar",
-        "value": "scrollbar-color: #7a4f27 #b07a45",
-        "purpose": "Kraft-deep thumb on kraft track."
+        "value": "scrollbar-color: #ff6a13 #0b1f3a",
+        "purpose": "Orange thumb on navy."
       },
       {
         "name": "selection",
-        "value": "::selection { background: #ffe45c; color: inherit }",
-        "purpose": "Highlighter pen."
+        "value": "::selection { background: #ff6a13; color: #0b1f3a }",
+        "purpose": "Orange highlighter."
       },
       {
         "name": "caret",
-        "value": "caret-color: #1d3d9a",
-        "purpose": "Ballpoint caret."
+        "value": "caret-color: #ff6a13",
+        "purpose": "Orange caret."
       },
       {
         "name": "focus",
-        "value": "outline: 2px solid #b8241c; outline-offset: 3px",
-        "purpose": "Examiner red focus ring on every focusable element."
+        "value": "outline: 3px solid var(--focus); outline-offset: 3px",
+        "purpose": "Orange on navy, navy on printed surfaces."
       }
     ],
     "materials": [
       {
-        "name": "kraft-fibre",
-        "value": "fractal noise SVG (baseFrequency .85, 3 octaves) over two hairline repeating gradients at 94deg and -3deg",
-        "purpose": "Fibrous kraft cover."
+        "name": "pvc-sheen",
+        "value": "112deg white band at 50% alpha, soft-light, position driven by --badge-tilt",
+        "purpose": "Moving sheen on the badge."
       },
       {
-        "name": "ruling",
-        "value": "1px #9cc3e4 line every rule gap (2rem records, 2.75rem Index, 1.75rem slip); offset -0.45rem in writing areas",
-        "purpose": "Ruled paper; text sits on the rule."
+        "name": "foil",
+        "value": "conic-gradient #f7b9a6, #f3e7a1, #a6e6d8, #a9c4f5, #d9b5f2 rotated by tilt",
+        "purpose": "Holographic strip, on the badge only."
       },
       {
-        "name": "graph",
-        "value": "40px #c4e3cd major + 8px #dcefe2 at 55% minor on #f8fcf7",
-        "purpose": "Graph paper, NASA record and certificate only."
+        "name": "ribbon",
+        "value": "#c94f08 edge, #ff6a13 centre, 4px weave pattern at 30deg, printed name along the path",
+        "purpose": "Woven lanyard."
       },
       {
-        "name": "stamp-ink",
-        "value": "fractal noise alpha mask (baseFrequency 1.4), 160px tile",
-        "purpose": "Uneven rubber-stamp coverage."
+        "name": "steel",
+        "value": "linear gradient #7c8794, #e9edf1, #b7c0ca, #5e6976",
+        "purpose": "Clip and crimp; desk tops, rails and bases use two-stop grey gradients."
       },
       {
-        "name": "tape",
-        "value": "4.25rem x 1.35rem, rgba(238,226,160,.72), 1px rgba(120,100,40,.35) edge, rotated -24deg",
-        "purpose": "Photo tape."
+        "name": "table-skirt",
+        "value": "repeating 90deg pleat gradient on #1b3b66",
+        "purpose": "Check-in desk front."
       },
       {
-        "name": "staple",
-        "value": "authored SVG 40x12: #5f656c crown, #d3d8de highlight, #2f3338 legs",
-        "purpose": "Joins certificates to the Annexure."
+        "name": "tyvek",
+        "value": "repeating 35deg 1px white at 7% every 7px",
+        "purpose": "Wristband fibre."
+      },
+      {
+        "name": "floor-tape",
+        "value": "repeating -45deg #ff6a13 and #0b1f3a, 16px stripes, 14px high",
+        "purpose": "Exit tape over the help desk."
       }
     ]
   },
   "components": [
     {
-      "name": "Red Stamp Button",
+      "name": "Primary Button",
       "kind": "button",
-      "refersTo": "button-stamp",
-      "description": "The one call to action: email Pragati. One per context; presses in at -1.5deg.",
-      "html": "<a class=\"ds-red-stamp\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"m3 7 9 6 9-6\"/></svg>Email Pragati</a>",
-      "css": ".ds-red-stamp { display: inline-flex; align-items: center; gap: 0.55rem; background: #b8241c; color: #fff; border: 2px solid #2b2118; border-radius: 4px; padding: 0.7rem 1.1rem 0.65rem; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-stretch: 75%; font-weight: 800; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.05em; line-height: 1; text-decoration: none; transform: rotate(-1.5deg); transition: background-color 160ms cubic-bezier(0.16,1,0.3,1), transform 160ms cubic-bezier(0.16,1,0.3,1); } .ds-red-stamp:hover { background: #9a1c15; } .ds-red-stamp:active { transform: rotate(-1.5deg) translateY(1px) scale(0.98); } .ds-red-stamp:focus-visible { outline: 2px solid #b8241c; outline-offset: 3px; }"
+      "refersTo": "button-primary",
+      "description": "Orange with navy text. Starts a booth and ends every game at the email.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"20\" height=\"16\" x=\"2\" y=\"4\" rx=\"2\"/><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"/></svg>Email Pragati</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 46px; padding: 10px 20px; border-radius: 8px; border: 1.5px solid transparent; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-stretch: 92%; font-weight: 800; font-size: 1rem; line-height: 1.1; text-decoration: none; cursor: pointer; transition: background-color 160ms cubic-bezier(0.16,1,0.3,1), transform 160ms cubic-bezier(0.16,1,0.3,1), box-shadow 160ms cubic-bezier(0.16,1,0.3,1); background: #ff6a13; color: #0b1f3a; box-shadow: 0 8px 18px rgba(2,8,20,0.35); } .ds-btn-primary:hover { background: #ff8240; transform: translateY(-1px); box-shadow: 0 12px 22px rgba(2,8,20,0.4); } .ds-btn-primary:active { transform: translateY(1px); box-shadow: 0 4px 10px rgba(2,8,20,0.35); } .ds-btn-primary:focus-visible { outline: 3px solid #ff6a13; outline-offset: 3px; }"
     },
     {
-      "name": "Paper Button",
+      "name": "Ghost Button",
       "kind": "button",
-      "refersTo": "button-paper",
-      "description": "Secondary choices and replays: a plain outlined paper tab.",
-      "html": "<button class=\"ds-btn\" type=\"button\">Play again</button>",
-      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 0.45rem; border: 1.5px solid #2b2118; border-radius: 4px; padding: 0.5rem 0.85rem 0.45rem; background: #fbfcf8; color: #1b1a17; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-weight: 650; font-size: 0.92rem; line-height: 1; cursor: pointer; transition: background-color 140ms, color 140ms, transform 140ms; } .ds-btn:hover { background: #eef3fc; color: #1d3d9a; } .ds-btn:active { transform: translateY(1px); } .ds-btn:focus-visible { outline: 2px solid #b8241c; outline-offset: 3px; } .ds-btn:disabled { opacity: 0.45; cursor: not-allowed; }"
+      "refersTo": "button-ghost",
+      "description": "Secondary action on navy.",
+      "html": "<div class=\"ds-on-navy\"><button class=\"ds-btn-ghost\" type=\"button\">Turn off camera</button></div>",
+      "css": ".ds-on-navy { background: #102a4c; padding: 16px; } .ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 46px; padding: 10px 20px; border-radius: 8px; border: 1.5px solid transparent; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-stretch: 92%; font-weight: 800; font-size: 1rem; line-height: 1.1; text-decoration: none; cursor: pointer; transition: background-color 160ms cubic-bezier(0.16,1,0.3,1), transform 160ms cubic-bezier(0.16,1,0.3,1), box-shadow 160ms cubic-bezier(0.16,1,0.3,1); background: transparent; color: #f2f4f7; border-color: rgba(242,244,247,0.4); } .ds-btn-ghost:hover { border-color: #f2f4f7; background: rgba(242,244,247,0.06); } .ds-btn-ghost:focus-visible { outline: 3px solid #ff6a13; outline-offset: 3px; }"
     },
     {
-      "name": "Ink Button",
+      "name": "Ink Ghost Button",
       "kind": "button",
-      "refersTo": "button-ink",
-      "description": "Starts a practical or moves one step forward. Ballpoint blue.",
-      "html": "<button class=\"ds-btn-ink\" type=\"button\">Next report &rarr;</button>",
-      "css": ".ds-btn-ink { display: inline-flex; align-items: center; gap: 0.45rem; border: 1.5px solid #2b2118; border-radius: 4px; padding: 0.5rem 0.85rem 0.45rem; background: #1d3d9a; color: #fff; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-weight: 650; font-size: 0.92rem; line-height: 1; cursor: pointer; transition: background-color 140ms, transform 140ms; } .ds-btn-ink:hover { background: #15307e; } .ds-btn-ink:active { transform: translateY(1px); } .ds-btn-ink:focus-visible { outline: 2px solid #b8241c; outline-offset: 3px; }"
+      "refersTo": "button-ink-ghost",
+      "description": "Secondary action on printed surfaces.",
+      "html": "<div class=\"ds-on-paper\"><button class=\"ds-btn-ink-ghost\" type=\"button\">Play again</button></div>",
+      "css": ".ds-on-paper { background: #f2f4f7; padding: 16px; } .ds-btn-ink-ghost { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 46px; padding: 10px 20px; border-radius: 8px; border: 1.5px solid transparent; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-stretch: 92%; font-weight: 800; font-size: 1rem; line-height: 1.1; text-decoration: none; cursor: pointer; transition: background-color 160ms cubic-bezier(0.16,1,0.3,1), transform 160ms cubic-bezier(0.16,1,0.3,1), box-shadow 160ms cubic-bezier(0.16,1,0.3,1); background: transparent; color: #0b1f3a; border-color: rgba(11,31,58,0.4); } .ds-btn-ink-ghost:hover { border-color: #0b1f3a; } .ds-btn-ink-ghost:focus-visible { outline: 3px solid #0b1f3a; outline-offset: 3px; }"
     },
     {
-      "name": "Status Stamp",
-      "kind": "chip",
-      "refersTo": "status-stamp",
-      "description": "Violet rubber stamp with uneven ink. Status only: merged, deployed, nominated, graded.",
-      "html": "<p class=\"ds-stamp\">Merged</p>",
-      "css": ".ds-stamp { display: inline-flex; align-items: center; gap: 0.4em; margin: 0; border: 2.5px solid currentColor; border-radius: 4px; padding: 0.3em 0.6em 0.2em; color: #4f2e8c; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-stretch: 70%; font-weight: 800; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.06em; line-height: 1; transform: rotate(-5deg); -webkit-mask-image: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='s'><feTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='2'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 2.05'/></filter><rect width='100%' height='100%' filter='url(%23s)'/></svg>\"); mask-image: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='s'><feTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='2'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 2.05'/></filter><rect width='100%' height='100%' filter='url(%23s)'/></svg>\"); -webkit-mask-size: 160px 160px; mask-size: 160px 160px; }"
+      "name": "Pass Switch",
+      "kind": "nav",
+      "refersTo": "pose-button",
+      "description": "Reading-depth control for the whole page: Visitor pass or All-access.",
+      "html": "<div class=\"ds-pass\" role=\"group\" aria-label=\"Reading depth\"><button aria-pressed=\"true\"><span class=\"ds-swatch\"></span>Visitor pass</button><button aria-pressed=\"false\"><span class=\"ds-swatch ds-swatch-all\"></span>All-access</button></div>",
+      "css": ".ds-pass { display: inline-flex; gap: 4px; padding: 4px; border-radius: 999px; border: 1.5px solid rgba(242,244,247,0.22); background: #0b1f3a; } .ds-pass button { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px 7px 10px; border: 0; border-radius: 999px; background: transparent; color: #a9b8cc; font-family: Overpass, system-ui, sans-serif; font-size: 0.875rem; font-weight: 700; line-height: 1.2; cursor: pointer; transition: background-color 200ms, color 200ms; } .ds-pass button:hover { color: #f2f4f7; } .ds-pass button[aria-pressed=\"true\"] { background: #f2f4f7; color: #0b1f3a; } .ds-pass button:focus-visible { outline: 3px solid #ff6a13; outline-offset: 3px; } .ds-swatch { width: 9px; height: 18px; border-radius: 2px; background: #1ba39c; } .ds-swatch-all { background: #ff6a13; }"
     },
     {
-      "name": "Apparatus Chip",
+      "name": "Zone Sign",
+      "kind": "custom",
+      "refersTo": "zone-sign",
+      "description": "A white venue sign on two wires, opening every zone.",
+      "html": "<div class=\"ds-hang\"><div class=\"ds-sign\"><span class=\"ds-letter\">E</span><span class=\"ds-sign-text\"><strong>Hands-on booth</strong><small>Zone E &bull; Live demo: show a gesture</small></span></div></div>",
+      "css": ".ds-hang { display: flex; padding-top: 52px; background: #0b1f3a; } .ds-sign { position: relative; display: inline-flex; align-items: center; gap: 16px; padding: 12px 24px 12px 12px; border-radius: 6px; background: #f2f4f7; color: #0b1f3a; box-shadow: 0 2px 3px rgba(2,8,20,0.3), 0 16px 30px rgba(2,8,20,0.4); } .ds-sign::before, .ds-sign::after { content: \"\"; position: absolute; bottom: 100%; width: 2px; height: 52px; background: linear-gradient(#53677f, #a9b8cc); } .ds-sign::before { left: 22%; } .ds-sign::after { right: 22%; } .ds-letter { display: grid; place-items: center; width: 58px; height: 58px; border-radius: 4px; background: #ff6a13; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-stretch: 115%; font-weight: 900; font-size: 2rem; } .ds-sign-text { display: flex; flex-direction: column; } .ds-sign-text strong { font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-stretch: 112%; font-weight: 800; font-size: 2rem; line-height: 1.02; letter-spacing: -0.01em; } .ds-sign-text small { margin-top: 4px; font-family: Overpass, system-ui, sans-serif; font-size: 0.875rem; font-weight: 700; color: #3d506b; }"
+    },
+    {
+      "name": "Stack Chips",
       "kind": "chip",
       "refersTo": "chip",
-      "description": "Pill tag for apparatus and skills. The only round shape in the system.",
-      "html": "<ul class=\"ds-chips\"><li class=\"ds-chip\">Python</li><li class=\"ds-chip\">sockets</li><li class=\"ds-chip\">pocketpaw/pocketpaw</li></ul>",
-      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 0.375rem; list-style: none; margin: 0; padding: 0; } .ds-chip { display: inline-block; border: 1.25px solid #2b2118; border-radius: 999px; padding: 0.18rem 0.6rem 0.12rem; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-size: 0.82rem; font-weight: 500; background: #fbfcf8; color: #1b1a17; }"
+      "description": "Static stack labels on printed surfaces.",
+      "html": "<ul class=\"ds-chips\"><li>Next.js</li><li>TypeScript</li><li>MediaPipe</li></ul>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 12px; list-style: none; background: #f2f4f7; } .ds-chips li { padding: 3px 9px; border-radius: 4px; border: 1.5px solid rgba(11,31,58,0.28); font-family: Overpass, system-ui, sans-serif; font-size: 0.8125rem; font-weight: 700; color: #0b1f3a; }"
     },
     {
-      "name": "Icon Link",
-      "kind": "button",
-      "refersTo": "icon-link",
-      "description": "Outlined paper tab for LinkedIn, GitHub and Resume beside the red stamp.",
-      "html": "<a class=\"ds-icon-link\" href=\"#\"><svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z\"/><path d=\"M14 3v6h6M8 13h8M8 17h5\"/></svg>Resume</a>",
-      "css": ".ds-icon-link { display: inline-flex; align-items: center; gap: 0.4rem; border: 1.5px solid #2b2118; border-radius: 4px; padding: 0.55rem 0.75rem 0.5rem; background: #fbfcf8; color: #1b1a17; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-weight: 600; font-size: 0.9rem; line-height: 1; text-decoration: none; transition: color 160ms, border-color 160ms, background-color 160ms; } .ds-icon-link:hover { color: #1d3d9a; border-color: #1d3d9a; background: #eef3fc; } .ds-icon-link:focus-visible { outline: 2px solid #b8241c; outline-offset: 3px; }"
-    },
-    {
-      "name": "Text Field",
-      "kind": "input",
-      "refersTo": "input-field",
-      "description": "White field outlined in brown; red focus ring; ballpoint caret.",
-      "html": "<input class=\"ds-input\" placeholder=\"Ask a support question…\" aria-label=\"Your question\" />",
-      "css": ".ds-input { min-width: 16rem; border: 1.5px solid #2b2118; border-radius: 3px; background: #fff; color: #1b1a17; padding: 0.5rem 0.75rem; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-size: 1rem; caret-color: #1d3d9a; } .ds-input::placeholder { color: #6d6a62; } .ds-input:focus-visible { outline: 2px solid #b8241c; outline-offset: 3px; }"
-    },
-    {
-      "name": "Reading Depth Switch",
-      "kind": "nav",
-      "refersTo": "copy-switch-active",
-      "description": "Top-bar radio switch on kraft: Fair copy (short read) or Rough work (every detail).",
-      "html": "<div class=\"ds-bar\"><a class=\"ds-wordmark\" href=\"#\">Pragati<span>.</span></a><div class=\"ds-switch\" role=\"radiogroup\" aria-label=\"Reading depth\"><button role=\"radio\" aria-checked=\"true\" class=\"is-on\">Fair copy</button><button role=\"radio\" aria-checked=\"false\">Rough work</button></div></div>",
-      "css": ".ds-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 3.5rem; padding: 0 1rem; background: #b07a45; border-bottom: 1.5px solid #2b2118; } .ds-wordmark { font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-stretch: 68%; font-weight: 800; font-size: 1.6rem; text-transform: uppercase; line-height: 0.9; color: #170f07; text-decoration: none; } .ds-wordmark span { color: #b8241c; } .ds-switch { display: flex; padding: 2px; background: #fbfcf8; border: 1.5px solid #2b2118; border-radius: 4px; } .ds-switch button { border: 0; background: transparent; border-radius: 3px; padding: 0.375rem 0.75rem; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-weight: 600; font-size: 0.82rem; color: #4a4740; cursor: pointer; transition: color 150ms, background-color 150ms; } .ds-switch button:hover { color: #1d3d9a; } .ds-switch button.is-on { background: #1d3d9a; color: #fff; } .ds-switch button:focus-visible { outline: 2px solid #b8241c; outline-offset: 3px; }"
-    },
-    {
-      "name": "Ruled Record Sheet",
+      "name": "Roll-up Banner",
       "kind": "card",
       "refersTo": "sheet",
-      "description": "A punched, ruled sheet with a red margin; every line of writing sits on a rule.",
-      "html": "<article class=\"ds-sheet\"><span class=\"ds-hole ds-hole-a\"></span><span class=\"ds-hole ds-hole-b\"></span><span class=\"ds-margin\"></span><h2 class=\"ds-printed\">Reliable port fallback</h2><div class=\"ds-writing\"><p class=\"ds-label\">Aim</p><p>Stop pocketpaw from crashing at startup when its port is already taken.</p><p class=\"ds-label\">Result</p><p><strong>Merged into pocketpaw.</strong></p></div></article>",
-      "css": ".ds-sheet { position: relative; max-width: 40rem; background: #fbfcf8; border: 1.5px solid #2b2118; border-radius: 3px; padding: 1.75rem 1.5rem 2rem 4.4rem; color: #1b1a17; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; transform: rotate(-0.35deg); } .ds-margin { position: absolute; top: 0; bottom: 0; left: 3.2rem; width: 2px; background: #d7332a; } .ds-hole { position: absolute; left: 0.9rem; width: 0.875rem; height: 0.875rem; border-radius: 50%; border: 1.5px solid #2b2118; background: #b07a45; } .ds-hole-a { top: 22%; } .ds-hole-b { bottom: 22%; } .ds-printed { margin: 0; font-stretch: 68%; font-weight: 800; font-size: 2.4rem; line-height: 0.9; text-transform: uppercase; letter-spacing: 0.005em; } .ds-writing { margin-top: 1.5rem; background-image: linear-gradient(to bottom, transparent calc(2rem - 1px), #9cc3e4 calc(2rem - 1px), #9cc3e4 2rem); background-size: 100% 2rem; background-position: 0 -0.45rem; } .ds-writing p { margin: 0; line-height: 2rem; font-size: 1.04rem; } .ds-label { font-stretch: 80%; font-weight: 600; font-size: 0.72rem !important; text-transform: uppercase; letter-spacing: 0.06em; color: #4a4740; }"
+      "description": "A project on a stand: steel rail, colour head, white body, weighted base.",
+      "html": "<article class=\"ds-banner\"><div class=\"ds-banner-sheet\"><div class=\"ds-banner-head\"><h3>AirQuality</h3></div><div class=\"ds-banner-body\"><p>Real air-quality data on an interactive 3D globe.</p></div></div><div class=\"ds-banner-base\"></div></article>",
+      "css": ".ds-banner { width: 280px; padding: 12px; background: #0b1f3a; } .ds-banner-sheet { position: relative; background: #f2f4f7; color: #0b1f3a; border-radius: 2px 2px 0 0; box-shadow: 0 2px 3px rgba(2,8,20,0.3), 0 24px 40px rgba(2,8,20,0.4); } .ds-banner-sheet::before { content: \"\"; position: absolute; left: -4px; right: -4px; top: -6px; height: 8px; border-radius: 4px; background: linear-gradient(#e3e8ef, #7c8794); } .ds-banner-head { padding: 30px 22px 24px; background: #1ba39c; } .ds-banner-head h3 { margin: 0; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-stretch: 74%; font-weight: 900; font-size: 2.6rem; line-height: 0.92; } .ds-banner-body { padding: 22px; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-stretch: 90%; font-weight: 700; font-size: 1.3rem; line-height: 1.2; } .ds-banner-body p { margin: 0; } .ds-banner-base { height: 20px; margin: 0 -8px; border-radius: 4px 4px 6px 6px; background: linear-gradient(#d4dae2, #6b7785); }"
     },
     {
-      "name": "Index Row",
+      "name": "Kiosk Screen",
       "kind": "custom",
-      "refersTo": "sheet",
-      "description": "One ruled band of the Index: handwritten entry, highlighter sweep on hover, red tick in the Sign column.",
-      "html": "<table class=\"ds-index\"><tbody><tr><td class=\"ds-no\">3.</td><td><a class=\"ds-entry\" href=\"#\"><span>Port fallback (PR #906)</span></a></td><td class=\"ds-date\">April 2026</td><td class=\"ds-sign\"><svg width=\"28\" height=\"28\" viewBox=\"0 0 32 32\" fill=\"none\" aria-hidden=\"true\"><path d=\"M4 17.5c2.6 1.8 5 4.4 7 7.6C15.4 16.4 21 9.2 28.5 4\" stroke=\"#d7332a\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></td></tr></tbody></table>",
-      "css": ".ds-index { width: 100%; max-width: 40rem; border-collapse: collapse; background: #fbfcf8 linear-gradient(to bottom, transparent calc(2.75rem - 1px), #9cc3e4 calc(2.75rem - 1px), #9cc3e4 2.75rem); background-size: 100% 2.75rem; } .ds-index td { height: 2.75rem; vertical-align: bottom; line-height: 1.375rem; font-family: Kalam, 'Segoe Print', cursive; color: #1d3d9a; } .ds-no { width: 2.5rem; font-size: 1.125rem; } .ds-date { font-size: 1.02rem; } .ds-sign { width: 3.5rem; text-align: center; line-height: 0 !important; } .ds-entry { color: #1d3d9a; font-size: 1.28rem; text-decoration: none; } .ds-entry span { background: linear-gradient(#ffe45c, #ffe45c) no-repeat 0 78% / 0% 62%; transition: background-size 300ms ease-out; } .ds-entry:hover span, .ds-entry:focus-visible span { background-size: 100% 62%; } .ds-entry:focus-visible { outline: 2px solid #b8241c; outline-offset: 3px; }"
+      "refersTo": "kiosk-screen",
+      "description": "The Hands-on display: a source tag and a mirrored lens with the hand skeleton.",
+      "html": "<div class=\"ds-screen\"><span class=\"ds-tag\"><i></i>Sample pose</span><div class=\"ds-lens\"><svg class=\"ds-hand\" viewBox=\"0 0 400 300\" aria-hidden=\"true\"><line x1=\"200\" y1=\"270\" x2=\"150\" y2=\"240\"/><line x1=\"150\" y1=\"240\" x2=\"115\" y2=\"200\"/><line x1=\"115\" y1=\"200\" x2=\"95\" y2=\"165\"/><line x1=\"95\" y1=\"165\" x2=\"75\" y2=\"135\"/><line x1=\"200\" y1=\"270\" x2=\"150\" y2=\"145\"/><line x1=\"150\" y1=\"145\" x2=\"140\" y2=\"100\"/><line x1=\"140\" y1=\"100\" x2=\"133\" y2=\"70\"/><line x1=\"133\" y1=\"70\" x2=\"128\" y2=\"42\"/><line x1=\"200\" y1=\"270\" x2=\"192\" y2=\"135\"/><line x1=\"192\" y1=\"135\" x2=\"194\" y2=\"85\"/><line x1=\"194\" y1=\"85\" x2=\"194\" y2=\"55\"/><line x1=\"194\" y1=\"55\" x2=\"194\" y2=\"25\"/><line x1=\"200\" y1=\"270\" x2=\"232\" y2=\"142\"/><line x1=\"232\" y1=\"142\" x2=\"243\" y2=\"100\"/><line x1=\"243\" y1=\"100\" x2=\"250\" y2=\"70\"/><line x1=\"250\" y1=\"70\" x2=\"256\" y2=\"44\"/><line x1=\"200\" y1=\"270\" x2=\"268\" y2=\"158\"/><line x1=\"268\" y1=\"158\" x2=\"292\" y2=\"125\"/><line x1=\"292\" y1=\"125\" x2=\"306\" y2=\"100\"/><line x1=\"306\" y1=\"100\" x2=\"318\" y2=\"78\"/><line x1=\"150\" y1=\"145\" x2=\"192\" y2=\"135\"/><line x1=\"192\" y1=\"135\" x2=\"232\" y2=\"142\"/><line x1=\"232\" y1=\"142\" x2=\"268\" y2=\"158\"/><circle cx=\"200\" cy=\"270\" r=\"5\"/><circle cx=\"150\" cy=\"240\" r=\"5\"/><circle cx=\"115\" cy=\"200\" r=\"5\"/><circle cx=\"95\" cy=\"165\" r=\"5\"/><circle cx=\"75\" cy=\"135\" r=\"5\"/><circle cx=\"150\" cy=\"145\" r=\"5\"/><circle cx=\"140\" cy=\"100\" r=\"5\"/><circle cx=\"133\" cy=\"70\" r=\"5\"/><circle cx=\"128\" cy=\"42\" r=\"5\"/><circle cx=\"192\" cy=\"135\" r=\"5\"/><circle cx=\"194\" cy=\"85\" r=\"5\"/><circle cx=\"194\" cy=\"55\" r=\"5\"/><circle cx=\"194\" cy=\"25\" r=\"5\"/><circle cx=\"232\" cy=\"142\" r=\"5\"/><circle cx=\"243\" cy=\"100\" r=\"5\"/><circle cx=\"250\" cy=\"70\" r=\"5\"/><circle cx=\"256\" cy=\"44\" r=\"5\"/><circle cx=\"268\" cy=\"158\" r=\"5\"/><circle cx=\"292\" cy=\"125\" r=\"5\"/><circle cx=\"306\" cy=\"100\" r=\"5\"/><circle cx=\"318\" cy=\"78\" r=\"5\"/></svg></div></div>",
+      "css": ".ds-screen { position: relative; max-width: 420px; overflow: hidden; border: 10px solid #03070b; border-radius: 10px; background: #03070b; box-shadow: 0 16px 28px rgba(2,8,20,0.45); } .ds-tag { position: absolute; z-index: 2; top: 10px; left: 10px; display: inline-flex; align-items: center; gap: 8px; padding: 4px 10px; border-radius: 4px; background: rgba(3,7,11,0.82); font-family: Overpass, system-ui, sans-serif; font-size: 0.8125rem; font-weight: 700; color: #f2f4f7; } .ds-tag i { width: 9px; height: 9px; border-radius: 50%; background: #8296b0; } .ds-lens { aspect-ratio: 4 / 3; background: #081729; transform: scaleX(-1); } .ds-hand { display: block; width: 100%; height: 100%; } .ds-hand line { stroke: #5fd3cb; stroke-width: 4px; stroke-linecap: round; vector-effect: non-scaling-stroke; } .ds-hand circle { fill: #ff6a13; }"
+    },
+    {
+      "name": "Gesture Stamp Card",
+      "kind": "card",
+      "refersTo": "stamp-card",
+      "description": "A paper card on the booth table: dashed empty slots and flat teal-ink struck stamps.",
+      "html": "<div class=\"ds-table\"><div class=\"ds-card\"><h3>Gesture stamp card</h3><ul><li><span class=\"ds-stamp ds-stamped\"><svg class=\"ds-stamp-art\" viewBox=\"75 25 243 245\" aria-hidden=\"true\"><line x1=\"200\" y1=\"270\" x2=\"150\" y2=\"240\"/><line x1=\"150\" y1=\"240\" x2=\"115\" y2=\"200\"/><line x1=\"115\" y1=\"200\" x2=\"95\" y2=\"165\"/><line x1=\"95\" y1=\"165\" x2=\"75\" y2=\"135\"/><line x1=\"200\" y1=\"270\" x2=\"150\" y2=\"145\"/><line x1=\"150\" y1=\"145\" x2=\"140\" y2=\"100\"/><line x1=\"140\" y1=\"100\" x2=\"133\" y2=\"70\"/><line x1=\"133\" y1=\"70\" x2=\"128\" y2=\"42\"/><line x1=\"200\" y1=\"270\" x2=\"192\" y2=\"135\"/><line x1=\"192\" y1=\"135\" x2=\"194\" y2=\"85\"/><line x1=\"194\" y1=\"85\" x2=\"194\" y2=\"55\"/><line x1=\"194\" y1=\"55\" x2=\"194\" y2=\"25\"/><line x1=\"200\" y1=\"270\" x2=\"232\" y2=\"142\"/><line x1=\"232\" y1=\"142\" x2=\"243\" y2=\"100\"/><line x1=\"243\" y1=\"100\" x2=\"250\" y2=\"70\"/><line x1=\"250\" y1=\"70\" x2=\"256\" y2=\"44\"/><line x1=\"200\" y1=\"270\" x2=\"268\" y2=\"158\"/><line x1=\"268\" y1=\"158\" x2=\"292\" y2=\"125\"/><line x1=\"292\" y1=\"125\" x2=\"306\" y2=\"100\"/><line x1=\"306\" y1=\"100\" x2=\"318\" y2=\"78\"/><line x1=\"150\" y1=\"145\" x2=\"192\" y2=\"135\"/><line x1=\"192\" y1=\"135\" x2=\"232\" y2=\"142\"/><line x1=\"232\" y1=\"142\" x2=\"268\" y2=\"158\"/><circle cx=\"200\" cy=\"270\" r=\"5\"/><circle cx=\"150\" cy=\"240\" r=\"5\"/><circle cx=\"115\" cy=\"200\" r=\"5\"/><circle cx=\"95\" cy=\"165\" r=\"5\"/><circle cx=\"75\" cy=\"135\" r=\"5\"/><circle cx=\"150\" cy=\"145\" r=\"5\"/><circle cx=\"140\" cy=\"100\" r=\"5\"/><circle cx=\"133\" cy=\"70\" r=\"5\"/><circle cx=\"128\" cy=\"42\" r=\"5\"/><circle cx=\"192\" cy=\"135\" r=\"5\"/><circle cx=\"194\" cy=\"85\" r=\"5\"/><circle cx=\"194\" cy=\"55\" r=\"5\"/><circle cx=\"194\" cy=\"25\" r=\"5\"/><circle cx=\"232\" cy=\"142\" r=\"5\"/><circle cx=\"243\" cy=\"100\" r=\"5\"/><circle cx=\"250\" cy=\"70\" r=\"5\"/><circle cx=\"256\" cy=\"44\" r=\"5\"/><circle cx=\"268\" cy=\"158\" r=\"5\"/><circle cx=\"292\" cy=\"125\" r=\"5\"/><circle cx=\"306\" cy=\"100\" r=\"5\"/><circle cx=\"318\" cy=\"78\" r=\"5\"/></svg></span>Open Palm</li><li><span class=\"ds-stamp\"><svg class=\"ds-stamp-art\" viewBox=\"75 25 243 245\" aria-hidden=\"true\"><line x1=\"200\" y1=\"270\" x2=\"150\" y2=\"240\"/><line x1=\"150\" y1=\"240\" x2=\"115\" y2=\"200\"/><line x1=\"115\" y1=\"200\" x2=\"95\" y2=\"165\"/><line x1=\"95\" y1=\"165\" x2=\"75\" y2=\"135\"/><line x1=\"200\" y1=\"270\" x2=\"150\" y2=\"145\"/><line x1=\"150\" y1=\"145\" x2=\"140\" y2=\"100\"/><line x1=\"140\" y1=\"100\" x2=\"133\" y2=\"70\"/><line x1=\"133\" y1=\"70\" x2=\"128\" y2=\"42\"/><line x1=\"200\" y1=\"270\" x2=\"192\" y2=\"135\"/><line x1=\"192\" y1=\"135\" x2=\"194\" y2=\"85\"/><line x1=\"194\" y1=\"85\" x2=\"194\" y2=\"55\"/><line x1=\"194\" y1=\"55\" x2=\"194\" y2=\"25\"/><line x1=\"200\" y1=\"270\" x2=\"232\" y2=\"142\"/><line x1=\"232\" y1=\"142\" x2=\"243\" y2=\"100\"/><line x1=\"243\" y1=\"100\" x2=\"250\" y2=\"70\"/><line x1=\"250\" y1=\"70\" x2=\"256\" y2=\"44\"/><line x1=\"200\" y1=\"270\" x2=\"268\" y2=\"158\"/><line x1=\"268\" y1=\"158\" x2=\"292\" y2=\"125\"/><line x1=\"292\" y1=\"125\" x2=\"306\" y2=\"100\"/><line x1=\"306\" y1=\"100\" x2=\"318\" y2=\"78\"/><line x1=\"150\" y1=\"145\" x2=\"192\" y2=\"135\"/><line x1=\"192\" y1=\"135\" x2=\"232\" y2=\"142\"/><line x1=\"232\" y1=\"142\" x2=\"268\" y2=\"158\"/><circle cx=\"200\" cy=\"270\" r=\"5\"/><circle cx=\"150\" cy=\"240\" r=\"5\"/><circle cx=\"115\" cy=\"200\" r=\"5\"/><circle cx=\"95\" cy=\"165\" r=\"5\"/><circle cx=\"75\" cy=\"135\" r=\"5\"/><circle cx=\"150\" cy=\"145\" r=\"5\"/><circle cx=\"140\" cy=\"100\" r=\"5\"/><circle cx=\"133\" cy=\"70\" r=\"5\"/><circle cx=\"128\" cy=\"42\" r=\"5\"/><circle cx=\"192\" cy=\"135\" r=\"5\"/><circle cx=\"194\" cy=\"85\" r=\"5\"/><circle cx=\"194\" cy=\"55\" r=\"5\"/><circle cx=\"194\" cy=\"25\" r=\"5\"/><circle cx=\"232\" cy=\"142\" r=\"5\"/><circle cx=\"243\" cy=\"100\" r=\"5\"/><circle cx=\"250\" cy=\"70\" r=\"5\"/><circle cx=\"256\" cy=\"44\" r=\"5\"/><circle cx=\"268\" cy=\"158\" r=\"5\"/><circle cx=\"292\" cy=\"125\" r=\"5\"/><circle cx=\"306\" cy=\"100\" r=\"5\"/><circle cx=\"318\" cy=\"78\" r=\"5\"/></svg></span>Fist</li></ul><a href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"20\" height=\"16\" x=\"2\" y=\"4\" rx=\"2\"/><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"/></svg>Email Pragati about this project</a></div></div>",
+      "css": ".ds-table { padding: 24px; background: #102a4c; } .ds-card { display: grid; gap: 14px; max-width: 360px; padding: 18px 22px 20px; border-radius: 4px; background: #f2f4f7; color: #0b1f3a; transform: rotate(-0.6deg); box-shadow: 0 14px 24px rgba(2,8,20,0.4); font-family: Overpass, system-ui, sans-serif; } .ds-card h3 { margin: 0; font-family: Archivo, 'Archivo Narrow', system-ui, sans-serif; font-stretch: 78%; font-weight: 900; font-size: 1.5rem; line-height: 1.05; } .ds-card ul { display: grid; grid-template-columns: repeat(2, 96px); gap: 10px; margin: 0; padding: 0; list-style: none; } .ds-card li { display: grid; justify-items: center; gap: 6px; font-size: 0.8125rem; font-weight: 700; } .ds-stamp { position: relative; display: grid; place-items: center; width: 76px; aspect-ratio: 1; border: 2px dashed #8296b0; border-radius: 50%; } .ds-stamped { border-color: #0d6b66; border-style: solid; background: #0d6b66; transform: rotate(-6deg); } .ds-stamp-art { position: absolute; inset: 18%; width: 64%; height: 64%; } .ds-stamp-art line { stroke: #3d506b; stroke-width: 2.25px; stroke-linecap: round; vector-effect: non-scaling-stroke; } .ds-stamp-art circle { fill: #3d506b; } .ds-stamped .ds-stamp-art line { stroke: #f2f4f7; } .ds-stamped .ds-stamp-art circle { fill: #f2f4f7; } .ds-card a { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; color: inherit; text-decoration: underline; text-decoration-color: #b04300; text-underline-offset: 0.22em; transition: color 160ms cubic-bezier(0.16,1,0.3,1); } .ds-card a:hover { color: #b04300; } .ds-card a:focus-visible { outline: 3px solid #0b1f3a; outline-offset: 3px; }"
+    },
+    {
+      "name": "Pose Buttons",
+      "kind": "button",
+      "refersTo": "pose-button-active",
+      "description": "Outlined sample selectors for the kiosk; the active pose is teal-ink.",
+      "html": "<div class=\"ds-poses\"><button aria-pressed=\"true\">Open Palm</button><button aria-pressed=\"false\">Peace Sign</button></div>",
+      "css": ".ds-poses { display: grid; grid-template-columns: repeat(2, 140px); gap: 8px; padding: 16px; background: #102a4c; } .ds-poses button { min-height: 44px; padding: 8px 12px; border: 1.5px solid rgba(242,244,247,0.28); border-radius: 6px; background: transparent; color: #f2f4f7; font-family: Overpass, system-ui, sans-serif; font-weight: 700; cursor: pointer; transition: background-color 160ms, border-color 160ms; } .ds-poses button:hover { border-color: #f2f4f7; } .ds-poses button[aria-pressed=\"true\"] { border-color: #1ba39c; background: #0d6b66; } .ds-poses button:focus-visible { outline: 3px solid #ff6a13; outline-offset: 3px; }"
+    },
+    {
+      "name": "Event Log",
+      "kind": "custom",
+      "refersTo": "event-log",
+      "description": "Black mono strip for booth output.",
+      "html": "<ol class=\"ds-log\"><li>Waiting for a stable gesture. Each one must hold for 300 ms.</li><li class=\"ds-bound\">OPEN_PALM</li></ol>",
+      "css": ".ds-log { display: grid; gap: 2px; margin: 0; padding: 12px 14px; border-radius: 6px; background: #03070b; font-family: 'Overpass Mono', ui-monospace, monospace; font-size: 0.8125rem; color: #cdd6e0; list-style: none; } .ds-bound { color: #5fd3cb; }"
     }
   ],
   "narrative": {
-    "northStar": "The Practical File",
-    "overview": "The portfolio is a B.Tech practical file laid open on a desk. A fibrous kraft cover is the ground. White sheets sit on it, ruled in pale blue with a red margin, punched for binding, and joined by tape and staples. Every piece of work is an experiment record with Aim, Apparatus, Procedure (or Observation) and Result. The visitor is the examiner: a red pen ticks each record in the Index as it is read, and the viva earns the examiner's signature.\n\nThe world speaks in four inks, and each ink has one job. Printed-form black is the institution: condensed uppercase Archivo for headings and field labels. Ballpoint blue is Pragati's own hand: Kalam for the entries she writes, and the colour of every interactive affordance she offers. Examiner red is the visitor's pen and the one call to action. Violet is the rubber stamp that records status. Monospace appears only where a terminal would print: code, ports and printouts.\n\nDepth is physical but flat. Sheets are outlined in a dark brown line, turned a fraction of a degree, and placed on the desk with motion. Nothing casts a shadow. The density is that of a real record book: one line of writing per ruled line, generous margins, and short sheets that a recruiter can scan in ten seconds while an engineer can switch to \"Rough work\" for every step.",
+    "northStar": "The Event Floor",
+    "overview": "The portfolio is a hackathon floor at night. Deep navy is the hall. Everything of value is a printed object placed in that hall: a PVC badge on a woven lanyard, hanging zone signs, a check-in desk, roll-up banners, queue tokens, booth tables, wristbands, a sticker sheet, a registration form and a judge's clipboard. The visitor enters with a badge, reads the hook, and walks lettered zones A to I toward the help desk at the exit.\n\nThe system gets its identity from the objects, not from page sections. Each zone has its own event-floor object, and that object carries its real content. The objects share one print language: Archivo at very different widths, navy ink on badge white, and flat fields of lanyard orange and teal. The Hands-on booth extends the same language with a kiosk screen and a paper stamp card on a booth table, where a hand skeleton is the live data and, reduced to one ink, the stamp art.\n\nDensity is two-layered. The Visitor pass is the short read for a recruiter. The All-access pass adds engineering detail inside the same objects, with no change of layout. The design rejects the white hero over a card grid and the dark terminal page.",
     "keyCharacteristics": [
-      "Kraft cover ground with procedural fibre noise; white sheets on top.",
-      "Writing sits on the rules: body line-height equals the rule gap.",
-      "Four inks with fixed jobs: print, ballpoint blue, examiner red, stamp violet.",
-      "Outlined objects, slight rotations, no cast shadows.",
-      "Motion grammar: sheets placed, ink that writes, stamps that press.",
-      "Two reading depths: Fair copy (short) and Rough work (every detail)."
+      "Navy hall ground with bright printed objects placed on it.",
+      "Archivo width is the main expressive device: 72% on the badge, 118% on the desk tent.",
+      "Orange and teal alternate as zone colours; text on both is always navy.",
+      "Soft shadows in one navy-black ink lift objects off the floor.",
+      "Physical behaviour: the badge swings and flips, signs sway, stamps press.",
+      "One layout, two reading depths: Visitor pass and All-access."
     ],
     "rules": [
       {
-        "name": "The Four Inks Rule",
-        "body": "Print black is the form, ballpoint blue is her voice and her controls, red is the examiner, violet is status. Never give a colour a second job.",
+        "name": "The Navy Ink Rule",
+        "body": "Text on orange or teal is always navy (5.76:1 and 5.32:1). White on orange is 2.60:1, so it never appears as text.",
         "section": "colors"
       },
       {
-        "name": "The Examiner's Pen Rule",
-        "body": "Red appears only where an examiner would put a pen, where the paper prints its margin, where something fails, and on the single action to email her. Red is never decoration, body text, a heading, or a status label.",
+        "name": "The Three Teals Rule",
+        "body": "A hue has one form per surface. Use orange and teal as fills, the ink forms on white, and signal teal on anything that emits light.",
         "section": "colors"
       },
       {
-        "name": "The Stamp Rule",
-        "body": "Any state that a clerk would stamp (merged, deployed, nominated, verified, graded) is a violet rubber stamp. Status is never a coloured pill or a green badge.",
+        "name": "The Zone Tone Rule",
+        "body": "Orange and teal alternate through the zone letters, starting with orange at A. The directory tile and the zone sign tile of a zone always match.",
         "section": "colors"
       },
       {
-        "name": "The Filled-In Form Rule",
-        "body": "Printed condensed caps ask; Kalam answers. A label is always printed, and the value that a student would write by hand is always Kalam in ballpoint blue.",
+        "name": "The Width Is the Voice Rule",
+        "body": "Width states what kind of print it is. Use 72–78% for the printed identity, 85–92% for sheets and controls, and 105–118% for venue signage and stamps.",
         "section": "typography"
       },
       {
-        "name": "The Terminal Only Rule",
-        "body": "Monospace is for what a machine prints: port numbers, printout lines, code. Never use it for labels, metadata, dates or decoration.",
+        "name": "The Real Data Rule",
+        "body": "Overpass Mono is for what a system reports: PR numbers, port numbers, owners, log lines, the GitHub handle and registration values. Use it for no other text.",
         "section": "typography"
       },
       {
-        "name": "The Outlined Object Rule",
-        "body": "Every object is outlined, not lifted. A sheet, button, chip, photo or input gets a 1.25–2.5px outline-brown border; a soft or offset drop shadow never appears. (An inset 2px line under the Index table head is a drawn rule, not a shadow.)",
+        "name": "The One Shadow Ink Rule",
+        "body": "Every cast shadow uses rgba(2, 8, 20) with a soft blur, and it lands on the navy floor or a tabletop. Items that sit on white, the portrait and stickers, use a smaller navy-tinted shadow.",
         "section": "elevation"
       },
       {
-        "name": "The Desk Rule",
-        "body": "Sheets lie on the desk at a slight angle and settle when placed. Rotation stays under 3°, and content inside a sheet is never rotated except stamps, remarks and attached certificates.",
+        "name": "The Hand-Placed Rule",
+        "body": "Objects that a person set down tilt slightly: 0.4–1.5° on tickets, wristbands, tents, forms and the stamp card. Stamps may reach 8°, and stickers ±3°. Fixtures stay level: signs at rest, banners, tables and screens.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do set every line of record text on a rule: line-height equals the rule gap (2rem in records, 2.75rem in the Index), and field spacing is one rule.",
-      "Do write labels in the printed voice (Archivo 600, width 80%, uppercase, 0.72rem) and her values in Kalam ballpoint blue.",
-      "Do outline every object with a 1.5px outline-brown border and place sheets at under 3° of rotation.",
-      "Do keep one red stamp button per context, and make it email Pragati.",
-      "Do record status as a violet rubber stamp with the noise mask.",
-      "Do end every practical on a red-ink remark and the red stamp button.",
-      "Do state what is simulated in the practical frame's note.",
-      "Do animate with the three verbs only: placed, written, pressed."
+      "Do give each new zone a hanging sign and its own event-floor object, not a generic card.",
+      "Do set text on orange and teal in navy.",
+      "Do use the ink forms of orange and teal on white, and signal teal on dark screens.",
+      "Do give light printed surfaces the navy focus ring through the --focus value.",
+      "Do cast every shadow from rgba(2, 8, 20) with a soft blur.",
+      "Do end every game at the primary email button with a way to play again.",
+      "Do label a kiosk's data source on the screen: sample or live.",
+      "Do add engineer detail through All-access inside the existing object, with no layout change.",
+      "Do keep the portrait at 200 CSS px or less."
     ],
     "donts": [
-      "Don't use a cast or offset shadow on anything. Depth is outline, overlap and material.",
-      "Don't use red for body text, headings, decoration or status. Red is the examiner's pen, the printed margin, a failure, the focus ring and the email action.",
-      "Don't use violet for anything that is not a status stamp.",
-      "Don't use monospace for labels, dates, metadata or decoration; it is for code, ports and printouts only.",
-      "Don't set Kalam for printed form text, or printed caps for her handwritten entries.",
-      "Don't use graph paper except for the NASA record and its certificate.",
-      "Don't round sheets or buttons beyond 4px; only chips are pills."
+      "Don't turn the page into a white hero over a card grid, or a dark terminal. The black log is a small device on a booth table.",
+      "Don't set white text on orange.",
+      "Don't use Overpass Mono for prose, headings or button labels.",
+      "Don't use the orange focus ring on a white surface: it is 2.60:1 there.",
+      "Don't use orange-ink or teal-ink for text on navy.",
+      "Don't use sky or sand outside the sticker sheet.",
+      "Don't tilt fixtures, or tilt any object beyond the Hand-Placed Rule.",
+      "Don't mirror the kiosk's tag or controls; only the lens flips."
     ]
   }
 }
