@@ -121,6 +121,18 @@ export const projects: Project[] = [
   },
 ];
 
+export const fallbacks = [
+  { failure: "Port 8888 is already taken", recovery: "Binds the next free port", source: "PR #906", href: "#merge-desk" },
+  { failure: "The weather API goes down", recovery: "The report still goes through", source: "BharatRitu", href: "#expo" },
+  {
+    failure: "The same question comes in twice",
+    recovery: "Served from cache, no API call",
+    source: "Cloud 9",
+    href: "#check-in",
+  },
+  { failure: "This device has no working GPU", recovery: "Runs on the CPU instead", source: "Hand Gesture Recognition", href: "#hands-on" },
+];
+
 export type PullRequest = {
   number: number;
   title: string;

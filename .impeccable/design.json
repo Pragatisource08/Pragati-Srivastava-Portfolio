@@ -624,7 +624,7 @@
       },
       {
         "name": "scrollbar",
-        "value": "scrollbar-color: #ff6a13 #0b1f3a",
+        "value": "scrollbar-color: transparent transparent at rest; #ff6a13 transparent while scrolling (html.badge-scrolling)",
         "purpose": "Orange thumb on navy."
       },
       {

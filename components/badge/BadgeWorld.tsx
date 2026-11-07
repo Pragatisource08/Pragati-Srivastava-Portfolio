@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useCallback, useContext, useState, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from "react";
 import { Icon } from "@/components/icons";
 import { links } from "@/lib/content";
 
@@ -13,6 +13,29 @@ const PassContext = createContext<{ pass: Pass; setPass: (p: Pass) => void }>({
 /** Page root. Holds the reading depth: Visitor pass (short) or All-access (engineer detail). */
 export function BadgeWorld({ className, children }: { className: string; children: ReactNode }) {
   const [pass, setPass] = useState<Pass>("visitor");
+
+  // The scrollbar shows only while scrolling, or when the pointer is at the edge to grab it.
+  useEffect(() => {
+    const html = document.documentElement;
+    let timer = 0;
+    const reveal = () => {
+      html.classList.add("badge-scrolling");
+      window.clearTimeout(timer);
+      timer = window.setTimeout(() => html.classList.remove("badge-scrolling"), 900);
+    };
+    const onPointerMove = (e: PointerEvent) => {
+      if (window.innerWidth - e.clientX <= 18) reveal();
+    };
+    window.addEventListener("scroll", reveal, { passive: true });
+    window.addEventListener("pointermove", onPointerMove, { passive: true });
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("scroll", reveal);
+      window.removeEventListener("pointermove", onPointerMove);
+      html.classList.remove("badge-scrolling");
+    };
+  }, []);
+
   return (
     <PassContext.Provider value={{ pass, setPass }}>
       <div className={`badge-root ${className}`} data-pass={pass}>

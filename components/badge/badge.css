@@ -3,7 +3,13 @@
 html:has(.badge-root) {
   background: #0b1f3a;
   color-scheme: dark;
-  scrollbar-color: #ff6a13 #0b1f3a;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 240ms ease-out;
+}
+
+html.badge-scrolling:has(.badge-root) {
+  scrollbar-color: #ff6a13 transparent;
 }
 
 .badge-fonts {
@@ -722,7 +728,7 @@ html:has(.badge-root) {
 }
 
 .badge-root .badge-hero-top {
-  order: 4;
+  order: 5;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -751,7 +757,7 @@ html:has(.badge-root) {
 }
 
 .badge-root .badge-hook-sub {
-  order: 3;
+  order: 4;
   max-width: 56ch;
   font-size: clamp(1rem, 0.94rem + 0.3vw, 1.1875rem);
   line-height: 1.55;
@@ -760,7 +766,7 @@ html:has(.badge-root) {
 }
 
 .badge-root .badge-hero-actions {
-  order: 2;
+  order: 3;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -843,11 +849,11 @@ html:has(.badge-root) {
   }
 
   .badge-root .badge-hook-sub {
-    order: 2;
+    order: 3;
   }
 
   .badge-root .badge-hero-actions {
-    order: 3;
+    order: 4;
   }
 
   .badge-root .badge-to-floor {

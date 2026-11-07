@@ -1,0 +1,159 @@
+/* The hero's Plan B board. Scoped under .badge-root. */
+
+.badge-root .badge-hook em {
+  font-style: normal;
+  color: var(--orange);
+}
+
+.badge-root .badge-planb {
+  order: 2;
+  display: grid;
+  gap: 12px;
+  justify-items: start;
+  padding-block: 14px;
+  border-block: 1px solid var(--line);
+}
+
+.badge-root .badge-planb-stack {
+  display: grid;
+  width: 100%;
+}
+
+/* Every case shares one cell, so the tallest sets the height and the page never jumps. */
+.badge-root .badge-planb-case {
+  grid-area: 1 / 1;
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  visibility: hidden;
+}
+
+.badge-root .badge-planb-case[data-active="true"] {
+  visibility: visible;
+}
+
+.badge-root .badge-planb-line {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  align-items: baseline;
+  gap: 12px;
+}
+
+.badge-root .badge-planb-tag {
+  justify-self: start;
+  padding: 2px 8px 1px;
+  border: 1.5px solid var(--mist-2);
+  border-radius: 4px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.3;
+  white-space: nowrap;
+  color: var(--mist);
+}
+
+.badge-root .badge-planb-line[data-plan="b"] .badge-planb-tag {
+  border-color: var(--teal);
+  background: var(--teal);
+  color: var(--navy);
+}
+
+.badge-root .badge-planb-fail {
+  font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
+  color: var(--mist);
+  text-decoration-line: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--orange);
+}
+
+.badge-root .badge-planb-case[data-active="true"] .badge-planb-fail {
+  animation: badge-planb-strike 420ms var(--ease-out) 260ms both;
+}
+
+@keyframes badge-planb-strike {
+  from {
+    text-decoration-color: transparent;
+    color: var(--white);
+  }
+}
+
+.badge-root .badge-planb-fix {
+  font-size: clamp(1.1875rem, 1.1rem + 0.4vw, 1.4375rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--white);
+}
+
+.badge-root .badge-planb-case[data-active="true"] .badge-planb-line[data-plan="b"] {
+  animation: badge-planb-takeover 520ms var(--ease-out) 620ms both;
+}
+
+@keyframes badge-planb-takeover {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.badge-root .badge-planb-fix a {
+  margin-left: 10px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  white-space: nowrap;
+  color: var(--mist);
+  text-decoration-color: var(--teal);
+}
+
+.badge-root .badge-planb-fix a:hover {
+  color: var(--white);
+}
+
+.badge-root .badge-planb-next {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--mist);
+  transition: color 160ms var(--ease-out);
+}
+
+.badge-root .badge-planb-next:hover {
+  color: var(--orange);
+}
+
+.badge-root .badge-planb-next svg {
+  transition: transform 320ms var(--ease-out);
+}
+
+.badge-root .badge-planb-next:hover svg {
+  transform: rotate(-40deg);
+}
+
+/* Phones: the Email button stays in the first screen. */
+@media (max-width: 899px) {
+  .badge-root .badge-planb {
+    gap: 6px;
+    padding-block: 10px;
+  }
+
+  .badge-root .badge-planb-next {
+    min-height: 32px;
+  }
+
+  .badge-root .badge-hint-motion {
+    display: none;
+  }
+}
+
+@media (max-width: 899px) and (max-height: 780px) {
+  .badge-root .badge-stage {
+    --drop: 30px;
+  }
+
+  .badge-root .badge-hint {
+    display: none;
+  }
+}

@@ -2,6 +2,7 @@ import { Icon } from "@/components/icons";
 import { links, profile } from "@/lib/content";
 import { BadgeWorld, CopyAddress, PassToggle } from "@/components/badge/BadgeWorld";
 import { LanyardBadge } from "@/components/badge/LanyardBadge";
+import { PlanB } from "@/components/badge/PlanB";
 import {
   Booth,
   CheckIn,
@@ -30,11 +31,14 @@ export default function Home() {
             <PassToggle label="Reading depth for the whole page" />
           </div>
           <h1 className="badge-hook">
-            {profile.name} builds Python backends, REST APIs, and applied&nbsp;AI.
+            Things break.
+            <br />
+            My code has a <em>Plan&nbsp;B</em>.
           </h1>
+          <PlanB />
           <p className="badge-hook-sub">
-            Team Lead at Smart India Hackathon 2026. NASA Space Apps 2025 Global Nominee. A Gemini and Pinecone
-            pipeline serving live traffic, and two merged open-source PRs.
+            I&rsquo;m {profile.name}, a backend engineer building Python services, REST APIs, and applied AI. Team Lead
+            at Smart India Hackathon 2026. NASA Space Apps 2025 Global Nominee.
           </p>
           <div className="badge-hero-actions">
             <a className="badge-btn-primary badge-btn-lg" href={links.mailto}>

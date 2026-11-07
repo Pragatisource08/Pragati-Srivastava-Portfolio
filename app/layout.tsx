@@ -3,6 +3,7 @@ import { Archivo, Overpass, Overpass_Mono } from "next/font/google";
 import "./globals.css";
 import "@/components/badge/badge.css";
 import "@/components/badge/hand-booth.css";
+import "@/components/badge/plan-b.css";
 
 // Archivo's width axis gives the condensed print of event badges and the wide face of zone signage.
 const display = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--badge-display", display: "swap" });

@@ -425,7 +425,7 @@ A table-lip board with a steel clip and a white scorecard: score boxes, 48px opt
 The easing is cubic-bezier(0.16, 1, 0.3, 1). Controls take 150–220ms. The grammar is physical: hang, swing, flip, sway, press and flash. A global rule reduces all durations when the visitor asks for reduced motion, and each booth stays fully usable by keyboard.
 
 ### Browser Surfaces
-The canvas is navy with an orange scrollbar thumb on navy, dark colour scheme, orange text selection with navy text, and an orange caret.
+The canvas is navy with a thin orange scrollbar that appears only while scrolling or when the pointer reaches the right edge, dark colour scheme, orange text selection with navy text, and an orange caret.
 
 ## Do's and Don'ts
 
